@@ -129,7 +129,7 @@ export default function LocationSection() {
           >
             <div className="absolute inset-0 bg-black/5 z-10 pointer-events-none"></div>
             <Image
-              src={imgError["/images/map.jpg"] ? "/placeholder.svg?height=720&width=1280" : "/images/map.jpg"}
+              src={imgError["/images/map.jpg"] ? "/placeholder.svg" : "/images/map.jpg"}
               alt="Mapa lokality"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
