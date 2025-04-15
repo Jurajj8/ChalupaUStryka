@@ -22,32 +22,32 @@ export default function ExteriorSection() {
     {
       title: "Opláštená terasa",
       description: "Priamo z kuchyne je opláštená terasa s posedením a dvomi závesnými kreslami.",
-      image: "/images/exterior/terrace.jpg",
+      image: "/ChalupaUStryka/images/exterior/terrace.jpg",
     },
     {
       title: "Detské ihrisko",
       description: "Futbalové bránky, basketbalový kôš, drevený domček so šmýkačkou a pieskoviskom.",
-      image: "/images/exterior/playground.jpg",
+      image: "/ChalupaUStryka/images/exterior/playground.jpg",
     },
     {
       title: "Ohnisko a posedenie",
       description: "Ohnisko na opekanie s posedením pre celú rodinu alebo skupinu priateľov.",
-      image: "/images/exterior/fireplace.jpg",
+      image: "/ChalupaUStryka/images/exterior/fireplace.jpg",
     },
     {
       title: "Vodné atrakcie",
       description: "Kúpacia kaďa a v lete bazén pre osvieženie počas horúcich dní.",
-      image: "/images/exterior/pool.jpg",
+      image: "/ChalupaUStryka/images/exterior/pool.jpg",
     },
   ]
 
   const allExteriorImages = [
-    { src: "/images/exterior/chalupa-exterior-main.jpg", alt: "Chalupa u Strýka - Exteriér" },
-    { src: "/images/exterior/terrace.jpg", alt: "Terasa" },
-    { src: "/images/exterior/playground.jpg", alt: "Detské ihrisko" },
-    { src: "/images/exterior/fireplace.jpg", alt: "Ohnisko" },
-    { src: "/images/exterior/pool.jpg", alt: "Bazén" },
-    { src: "/images/exterior/garden.jpg", alt: "Záhrada" },
+    { src: "/ChalupaUStryka/images/exterior/chalupa-exterior-main.jpg", alt: "Chalupa u Strýka - Exteriér" },
+    { src: "/ChalupaUStryka/images/exterior/terrace.jpg", alt: "Terasa" },
+    { src: "/ChalupaUStryka/images/exterior/playground.jpg", alt: "Detské ihrisko" },
+    { src: "/ChalupaUStryka/images/exterior/fireplace.jpg", alt: "Ohnisko" },
+    { src: "/ChalupaUStryka/images/exterior/pool.jpg", alt: "Bazén" },
+    { src: "/ChalupaUStryka/images/exterior/garden.jpg", alt: "Záhrada" },
   ]
 
   return (

@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { type ReactNode, useRef, useEffect } from "react"
 import { motion, useAnimation, useInView } from "framer-motion"
 
@@ -63,17 +62,19 @@ export default function AnimatedElement({
     }
   }, [controls, inView, once])
 
+  // Dynamically create the motion component with the "as" prop
+  const MotionComponent = motion(Component)
+
   return (
-    <motion.div
+    <MotionComponent
       ref={ref}
       initial="hidden"
       animate={controls}
       variants={animations[animation]}
       transition={{ duration, delay, ease: "easeOut" }}
       className={className}
-      as={Component}
     >
       {children}
-    </motion.div>
+    </MotionComponent>
   )
 }

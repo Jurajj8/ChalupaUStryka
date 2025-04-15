@@ -1,9 +1,8 @@
 "use client"
 
 import type React from "react"
-
-import type { ReactNode } from "react"
 import { motion } from "framer-motion"
+import type { ReactNode } from "react"
 
 interface AnimatedTextProps {
   children: ReactNode
@@ -45,17 +44,19 @@ export default function AnimatedText({
     },
   }
 
+  // Create a motion component with dynamic "as" prop
+  const MotionComponent = motion(Component);
+
   return (
-    <motion.div
+    <MotionComponent
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={animations[animation]}
       transition={{ duration, delay, ease: "easeOut" }}
       className={className}
-      as={Component}
     >
       {children}
-    </motion.div>
+    </MotionComponent>
   )
 }

@@ -29,7 +29,7 @@ export default function LocationSection() {
       distance: "15 km",
       duration: "20 min",
       seasonality: "Celoročne",
-      image: "/images/attractions/velka-raca.jpg",
+      image: "/ChalupaUStryka/images/attractions/velka-raca.jpg",
     },
     {
       title: "Kysucká cyklomagistrála",
@@ -37,7 +37,7 @@ export default function LocationSection() {
       distance: "0 km",
       duration: "0 min",
       seasonality: "Celoročne",
-      image: "/images/attractions/cyklomagistrala.jpg",
+      image: "/ChalupaUStryka/images/attractions/cyklomagistrala.jpg",
     },
     {
       title: "Slovenský orloj v Starej Bystrici",
@@ -45,7 +45,7 @@ export default function LocationSection() {
       distance: "10 km",
       duration: "15 min",
       seasonality: "Celoročne",
-      image: "/images/attractions/orloj.jpg",
+      image: "/ChalupaUStryka/images/attractions/orloj.jpg",
     },
     {
       title: "Malá Fatra",
@@ -53,7 +53,7 @@ export default function LocationSection() {
       distance: "25 km",
       duration: "30 min",
       seasonality: "Celoročne (v zime lyžovanie)",
-      image: "/images/attractions/mala-fatra.jpg",
+      image: "/ChalupaUStryka/images/attractions/mala-fatra.jpg",
     },
   ]
 
