@@ -129,12 +129,12 @@ export default function LocationSection() {
           >
             <div className="absolute inset-0 bg-black/5 z-10 pointer-events-none"></div>
             <Image
-              src={imgError["/images/map.jpg"] ? "/placeholder.svg" : "/images/map.jpg"}
+              src={imgError["/ChalupaUStryka/images/map.jpg"] ? "/ChalupaUStryka/placeholder.svg?height=720&width=1280" : "/ChalupaUStryka/images/map.jpg"}
               alt="Mapa lokality"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
-              onError={() => handleImageError("/images/map.jpg")}
+              onError={() => handleImageError("/ChalupaUStryka/images/map.jpg")}
             />
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
