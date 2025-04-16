@@ -297,7 +297,7 @@ export default function LocationSection() {
         </div>
 
         <AnimatedElement animation="slideUp" delay={0.4} className="mb-12">
-          <Tabs defaultValue="attractions" value={activeTab} onValueChange={setActiveTab}>
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
             <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-8">
               <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 400 }}>
                 <TabsTrigger value="attractions" className="text-sm md:text-base">
@@ -316,122 +316,97 @@ export default function LocationSection() {
               </motion.div>
             </TabsList>
 
-            <TabsContent value="attractions">
-              <AnimatedText as="h3" animation="slideUp" delay={0.3} className="text-2xl font-semibold mb-6 text-center">
-                Turistické atrakcie v okolí
-              </AnimatedText>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {attractions.map((attraction, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                    whileHover={{ y: -10 }}
-                  >
-                    <Card className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full">
-                      <motion.div
-                        className="relative h-48"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ type: "spring", stiffness: 300, damping: 10 }}
-                      >
-                        <Image
-                          src={imgError[attraction.image] ? "/placeholder.svg?height=400&width=600" : attraction.image}
-                          alt={attraction.title}
-                          fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                          className="object-cover"
-                          onError={() => handleImageError(attraction.image)}
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div className="absolute bottom-2 left-2 right-2 flex justify-between items-center">
-                          <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
-                            <Car size={14} />
-                            <span>{attraction.distance}</span>
-                          </div>
-                          <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
-                            <Clock size={14} />
-                            <span>{attraction.duration}</span>
+            {activeTab === "attractions" && (
+            <TabsContent value="attractions" forceMount>
+              <motion.div
+                key="attractions"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.4 }}
+              >
+                <AnimatedText as="h3" animation="slideUp" delay={0.2} className="text-2xl font-semibold mb-6 text-center">
+                  Turistické atrakcie v okolí
+                </AnimatedText>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {attractions.map((item, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.1 * index }}
+                    >
+                      <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow h-full">
+                        <div className="relative h-48">
+                          <Image
+                            src={imgError[item.image] ? "/placeholder.svg" : item.image}
+                            alt={item.title}
+                            fill
+                            className="object-cover"
+                            onError={() => handleImageError(item.image)}
+                          />
+                          <div className="absolute inset-0 bg-black/40" />
+                          <div className="absolute bottom-2 left-2 right-2 flex justify-between text-white text-xs">
+                            <div className="bg-black/50 px-2 py-1 rounded">{item.distance}</div>
+                            <div className="bg-black/50 px-2 py-1 rounded">{item.duration}</div>
                           </div>
                         </div>
-                      </motion.div>
-                      <CardContent className="p-4">
-                        <motion.h4
-                          className="font-semibold text-lg mb-1"
-                          whileHover={{ x: 5 }}
-                          transition={{ type: "spring", stiffness: 300 }}
-                        >
-                          {attraction.title}
-                        </motion.h4>
-                        <p className="text-sm text-muted-foreground mb-2">{attraction.description}</p>
-                        <motion.div className="flex items-center text-sm text-primary" whileHover={{ scale: 1.05 }}>
-                          <motion.div whileHover={{ rotate: 10 }} className="mr-1">
-                            <Calendar size={16} />
-                          </motion.div>
-                          <span>{attraction.seasonality}</span>
-                        </motion.div>
-                      </CardContent>
-                    </Card>
-                  </motion.div>
-                ))}
-              </div>
+                        <CardContent className="p-4">
+                          <h4 className="font-semibold text-lg">{item.title}</h4>
+                          <p className="text-sm text-muted-foreground">{item.description}</p>
+                          <div className="mt-2 text-sm text-primary flex items-center gap-1">
+                            <Calendar size={14} />
+                            {item.seasonality}
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
             </TabsContent>
+            )}
 
-            <TabsContent value="cities">
-              <AnimatedText as="h3" animation="slideUp" delay={0.3} className="text-2xl font-semibold mb-6 text-center">
-                Mestá v okolí
-              </AnimatedText>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {cities.map((city, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                    whileHover={{ y: -5 }}
-                  >
-                    <Card className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full">
-                      <CardContent className="p-5">
-                        <div className="flex justify-between items-center mb-4">
-                          <motion.h4
-                            className="font-semibold text-xl"
-                            whileHover={{ x: 5 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                          >
-                            {city.name}
-                          </motion.h4>
-                          <div className="flex items-center gap-2">
-                            <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                              <Car size={14} className="text-primary" />
-                              <span>{city.distance}</span>
-                            </div>
-                            <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                              <Clock size={14} className="text-primary" />
-                              <span>{city.duration}</span>
-                            </div>
+            {activeTab === "cities" && (
+            <TabsContent value="cities" forceMount>
+              <motion.div
+                key="cities"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.4 }}
+              >
+                <AnimatedText as="h3" animation="slideUp" delay={0.2} className="text-2xl font-semibold mb-6 text-center">
+                  Mestá v okolí
+                </AnimatedText>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  {cities.map((city, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.1 * index }}
+                    >
+                      <Card className="shadow-md hover:shadow-lg transition-shadow h-full">
+                        <CardContent className="p-5">
+                          <h4 className="font-semibold text-lg mb-2">{city.name}</h4>
+                          <p className="text-sm text-muted-foreground mb-3">{city.description}</p>
+                          <div className="text-xs text-muted-foreground mb-2">
+                            <Car size={12} className="inline-block mr-1" />
+                            {city.distance} | <Clock size={12} className="inline-block mx-1" />
+                            {city.duration}
                           </div>
-                        </div>
-                        <p className="text-sm text-muted-foreground mb-4">{city.description}</p>
-                        <div className="bg-gray-50 p-3 rounded-lg">
-                          <h5 className="text-sm font-medium mb-2 text-primary">Vybavenosť a atrakcie:</h5>
-                          <div className="flex flex-wrap gap-2">
-                            {city.amenities.map((amenity, i) => (
-                              <motion.span
-                                key={i}
-                                whileHover={{ scale: 1.05 }}
-                                className="text-xs bg-white px-2 py-1 rounded-md border border-gray-200"
-                              >
-                                {amenity}
-                              </motion.span>
+                          <ul className="text-sm list-disc list-inside text-muted-foreground">
+                            {city.amenities.map((a, i) => (
+                              <li key={i}>{a}</li>
                             ))}
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </motion.div>
-                ))}
-              </div>
+                          </ul>
+                        </CardContent>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
             </TabsContent>
+          )}
 
             <TabsContent value="seasonal">
               <AnimatedText as="h3" animation="slideUp" delay={0.3} className="text-2xl font-semibold mb-6 text-center">
