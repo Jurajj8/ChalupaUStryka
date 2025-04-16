@@ -140,11 +140,6 @@ export default function ExteriorSection() {
                     icon: "spa",
                   },
                   {
-                    title: "Vonkajšia sauna",
-                    description: "Fínska sauna s kapacitou pre 4 osoby s výhľadom na okolité hory",
-                    icon: "flame",
-                  },
-                  {
                     title: "Záhradné lehátka",
                     description: "Pohodlné lehátka na slnenie s nastaviteľným sklonom a tienidlom",
                     icon: "sun",
