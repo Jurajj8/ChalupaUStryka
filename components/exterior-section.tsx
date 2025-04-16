@@ -37,7 +37,7 @@ export default function ExteriorSection() {
     {
       title: "Vodné atrakcie",
       description: "Kúpacia kaďa a v lete bazén pre osvieženie počas horúcich dní.",
-      image: "/ChalupaUStryka/images/exterior/jakuza.png",
+      image: "/ChalupaUStryka/images/exterior/kada.JPG",
     },
   ]
 
