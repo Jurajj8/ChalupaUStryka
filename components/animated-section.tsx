@@ -51,12 +51,13 @@ export default function AnimatedSection({
 }: AnimatedSectionProps) {
   const controls = useAnimation()
   const ref = useRef(null)
-  const inView = useInView(ref, { once, amount: 0.3 })
+  const inView = useInView(ref, { once, amount: 0 })
 
   useEffect(() => {
-    if (inView) {
+    console.log(`[AnimatedSection] ${id} inView:`, inView)
+    if (inView || once) {
       controls.start("visible")
-    } else if (!once) {
+    } else {
       controls.start("hidden")
     }
   }, [controls, inView, once])
