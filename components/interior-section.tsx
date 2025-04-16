@@ -16,10 +16,10 @@ export default function InteriorSection() {
       title: "Spálne",
       description: "V chate sa nachádzajú tri spálne s 8 pevnými lôžkami, jednou prístelkou a cestovnou postieľkou.",
       images: [
-        { src: "/ChalupaUStryka/images/interior/bedrooms/1.png", alt: "Spálňa 1" },
-        { src: "/ChalupaUStryka/images/interior/bedrooms/2.png", alt: "Spálňa 2" },
+        { src: "/ChalupaUStryka/images/interior/bedrooms/4.png", alt: "Spálňa 1" },
+        { src: "/ChalupaUStryka/images/interior/bedrooms/1.png", alt: "Spálňa 2" },
+        { src: "/ChalupaUStryka/images/interior/bedrooms/2.png", alt: "Spálňa 3" },
         { src: "/ChalupaUStryka/images/interior/bedrooms/3.png", alt: "Detská postielka" },
-        { src: "/ChalupaUStryka/images/interior/bedrooms/4.png", alt: "Spálňa 3" },
       ],
     },
     {
