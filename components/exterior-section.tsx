@@ -144,6 +144,16 @@ export default function ExteriorSection() {
                     description: "Pohodlné lehátka na slnenie s nastaviteľným sklonom a tienidlom",
                     icon: "sun",
                   },
+                  {
+                    title: "Večerné posedenie",
+                    description: "Krytá terasa s vonkajším krbom, LED osvetlením a bluetooth reproduktormi",
+                    icon: "music",
+                  },
+                  {
+                    title: "Kotlík a ohnisko",
+                    description: "Kotlík na guláš, otvorené ohnisko a posedenie pri táboráku",
+                    icon: "fire",
+                  },
                 ].map((item, index) => (
                   <motion.div
                     key={index}
@@ -301,11 +311,6 @@ export default function ExteriorSection() {
                     icon: "tennis",
                   },
                   {
-                    title: "Večerné posedenie",
-                    description: "Krytá terasa s vonkajším krbom, LED osvetlením a bluetooth reproduktormi",
-                    icon: "music",
-                  },
-                  {
                     title: "Trampolína a preliezky",
                     description: "Detská trampolína, šmýkačka, preliezky a domček pre najmenších",
                     icon: "kids",
@@ -314,11 +319,6 @@ export default function ExteriorSection() {
                     title: "Elektronické šípky",
                     description: "Elektronické terče na šípky – ideálne na zábavné večery s priateľmi",
                     icon: "target",
-                  },
-                  {
-                    title: "Kotlík a ohnisko",
-                    description: "Kotlík na guláš, otvorené ohnisko a posedenie pri táboráku",
-                    icon: "fire",
                   },
                 ].map((item, index) => (
                   <motion.div

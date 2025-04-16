@@ -26,31 +26,29 @@ export default function LocationSection() {
       title: "Snow Paradise Veľká Rača",
       description:
         "Lyžiarske stredisko v zime, v lete Bike Park, bobová dráha, trampolíny, lanový park a ďalšie atrakcie.",
-      distance: "15 km",
-      duration: "20 min",
+      distance: "18 km",
+      duration: "24 min",
       seasonality: "Celoročne",
       image: "/ChalupaUStryka/images/attractions/velka-raca.jpg",
     },
     {
       title: "Kysucká cyklomagistrála",
       description: "Cyklotrasa vedúca priamo cez obec, v zime možnosť bežkovania.",
-      distance: "0 km",
-      duration: "0 min",
       seasonality: "Celoročne",
       image: "/ChalupaUStryka/images/attractions/cyklomagistrala.jpg",
     },
     {
       title: "Slovenský orloj v Starej Bystrici",
       description: "Unikátny drevený orloj, jediný svojho druhu na Slovensku.",
-      distance: "10 km",
-      duration: "15 min",
+      distance: "4 km",
+      duration: "4 min",
       seasonality: "Celoročne",
       image: "/ChalupaUStryka/images/attractions/orloj.jpg",
     },
     {
       title: "Malá Fatra",
       description: "Nádherné hory s možnosťou turistiky, výstupy na Malý a Veľký Rozsutec, Jánošíkove diery.",
-      distance: "25 km",
+      distance: "26 km",
       duration: "30 min",
       seasonality: "Celoročne (v zime lyžovanie)",
       image: "/ChalupaUStryka/images/attractions/mala-fatra.jpg",
@@ -129,12 +127,12 @@ export default function LocationSection() {
           >
             <div className="absolute inset-0 bg-black/5 z-10 pointer-events-none"></div>
             <Image
-              src={imgError["/ChalupaUStryka/images/map.jpg"] ? "/ChalupaUStryka/placeholder.svg?height=720&width=1280" : "/ChalupaUStryka/images/map.jpg"}
+              src={imgError["/ChalupaUStryka/images/klubina.jpg"] ? "/ChalupaUStryka/placeholder.svg?height=720&width=1280" : "/ChalupaUStryka/images/klubina.jpg"}
               alt="Mapa lokality"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
-              onError={() => handleImageError("/ChalupaUStryka/images/map.jpg")}
+              onError={() => handleImageError("/ChalupaUStryka/images/klubina.jpg")}
             />
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -299,7 +297,7 @@ export default function LocationSection() {
         </div>
 
         <AnimatedElement animation="slideUp" delay={0.4} className="mb-12">
-          <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+          <Tabs defaultValue="attractions" value={activeTab} onValueChange={setActiveTab}>
             <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-8">
               <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 400 }}>
                 <TabsTrigger value="attractions" className="text-sm md:text-base">
