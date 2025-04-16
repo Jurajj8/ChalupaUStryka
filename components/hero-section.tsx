@@ -13,7 +13,7 @@ export default function HeroSection() {
     <section id="home" className="relative h-[90vh] w-full overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src={imgError ? "/ChalupaUStryka/placeholder.svg?height=1080&width=1920" : "/ChalupaUStryka/images/exterior/chalupa-exterior-main.jpg"}
+          src={imgError ? "/ChalupaUStryka/placeholder.svg?height=1080&width=1920" : "/ChalupaUStryka/images/exterior/chalupa.png"}
           alt="Chalupa u Strýka - Exteriér"
           fill
           className="object-cover brightness-[0.8]"

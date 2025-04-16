@@ -53,6 +53,8 @@ export default function InteriorSection() {
         "K vybaveniu patria tiež dve kúpeľne s toaletou a sprchovacím kútom, pričom v jednej sa nachádza infrasauna pre dve osoby. K dispozícii sú posteľné obliečky, plachty do sauny v počte 9 kusov a uteráky na ruky.",
       images: [
         { src: "/ChalupaUStryka/images/interior/bathroom/1.png", alt: "Kúpeľňa 1" },
+        { src: "/ChalupaUStryka/images/interior/bathroom/2.png", alt: "Kúpeľňa 2" },
+        { src: "/ChalupaUStryka/images/interior/bathroom/3.png", alt: "Sauna" },
       ],
     },
   ]
