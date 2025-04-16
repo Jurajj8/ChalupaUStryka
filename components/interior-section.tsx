@@ -16,9 +16,10 @@ export default function InteriorSection() {
       title: "Spálne",
       description: "V chate sa nachádzajú tri spálne s 8 pevnými lôžkami, jednou prístelkou a cestovnou postieľkou.",
       images: [
-        { src: "/ChalupaUStryka/images/interior/bedroom-1.jpg", alt: "Spálňa 1" },
-        { src: "/ChalupaUStryka/images/interior/bedroom-2.jpg", alt: "Spálňa 2" },
-        { src: "/ChalupaUStryka/images/interior/bedroom-3.jpg", alt: "Spálňa 3" },
+        { src: "/ChalupaUStryka/images/interior/bedrooms/1.png", alt: "Spálňa 1" },
+        { src: "/ChalupaUStryka/images/interior/bedrooms/2.png", alt: "Spálňa 2" },
+        { src: "/ChalupaUStryka/images/interior/bedrooms/3.png", alt: "Detská postielka" },
+        { src: "/ChalupaUStryka/images/interior/bedrooms/4.png", alt: "Spálňa 3" },
       ],
     },
     {
@@ -27,8 +28,10 @@ export default function InteriorSection() {
       description:
         "Spoločenská miestnosť s gaučom a televízorom so satelitným alebo internetovým príjmom a službou Netflix. Celá rodina či skupina priateľov sa môže zabaviť aj pri rôznych spoločenských hrách, alebo pri stolnom futbale.",
       images: [
-        { src: "/ChalupaUStryka/images/interior/living-room-1.jpg", alt: "Spoločenská miestnosť 1" },
-        { src: "/ChalupaUStryka/images/interior/living-room-2.jpg", alt: "Spoločenská miestnosť 2" },
+        { src: "/ChalupaUStryka/images/interior/common/1.png", alt: "Spoločenská miestnosť 1" },
+        { src: "/ChalupaUStryka/images/interior/common/2.png", alt: "Spoločenská miestnosť 2" },
+        { src: "/ChalupaUStryka/images/interior/common/3.png", alt: "Detský kútik" },
+        { src: "/ChalupaUStryka/images/interior/common/4.png", alt: "Kalčeto" },
       ],
     },
     {
@@ -37,8 +40,10 @@ export default function InteriorSection() {
       description:
         "Na prípravu vlastnej stravy je k dispozícii plne vybavená kuchyňa, kde nechýba elektrický sporák s rúrou, chladnička s mrazničkou, mikrovlnná rúra, umývačka riadu, rýchlovarná kanvica, kávovar, hriankovač a jedálenské posedenie.",
       images: [
-        { src: "/ChalupaUStryka/images/interior/kitchen-1.jpg", alt: "Kuchyňa 1" },
-        { src: "/ChalupaUStryka/images/interior/kitchen-2.jpg", alt: "Kuchyňa 2" },
+        { src: "/ChalupaUStryka/images/interior/kitchen/1.png", alt: "Kuchyňa 1" },
+        { src: "/ChalupaUStryka/images/interior/kitchen/2.png", alt: "Jedálenský stôl" },
+        { src: "/ChalupaUStryka/images/interior/kitchen/3.png", alt: "Kuchynské spotrebiče" },
+
       ],
     },
     {
@@ -47,8 +52,7 @@ export default function InteriorSection() {
       description:
         "K vybaveniu patria tiež dve kúpeľne s toaletou a sprchovacím kútom, pričom v jednej sa nachádza infrasauna pre dve osoby. K dispozícii sú posteľné obliečky, plachty do sauny v počte 9 kusov a uteráky na ruky.",
       images: [
-        { src: "/ChalupaUStryka/images/interior/bathroom-1.jpg", alt: "Kúpeľňa 1" },
-        { src: "/ChalupaUStryka/images/interior/bathroom-2.jpg", alt: "Kúpeľňa 2" },
+        { src: "/ChalupaUStryka/images/interior/bathroom/1.png", alt: "Kúpeľňa 1" },
       ],
     },
   ]

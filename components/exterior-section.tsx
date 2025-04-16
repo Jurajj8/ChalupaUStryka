@@ -22,32 +22,37 @@ export default function ExteriorSection() {
     {
       title: "Opláštená terasa",
       description: "Priamo z kuchyne je opláštená terasa s posedením a dvomi závesnými kreslami.",
-      image: "/ChalupaUStryka/images/exterior/terrace.jpg",
+      image: "/ChalupaUStryka/images/exterior/terrace.png",
     },
     {
       title: "Detské ihrisko",
       description: "Futbalové bránky, basketbalový kôš, drevený domček so šmýkačkou a pieskoviskom.",
-      image: "/ChalupaUStryka/images/exterior/playground.jpg",
+      image: "/ChalupaUStryka/images/exterior/playground.png",
     },
     {
-      title: "Ohnisko a posedenie",
-      description: "Ohnisko na opekanie s posedením pre celú rodinu alebo skupinu priateľov.",
-      image: "/ChalupaUStryka/images/exterior/fireplace.jpg",
+      title: "Bazén s lehátkami",
+      description: "Bazén pre celú rodinu alebo skupinu priateľov.",
+      image: "/ChalupaUStryka/images/exterior/sitting.png",
     },
     {
       title: "Vodné atrakcie",
       description: "Kúpacia kaďa a v lete bazén pre osvieženie počas horúcich dní.",
-      image: "/ChalupaUStryka/images/exterior/pool.jpg",
+      image: "/ChalupaUStryka/images/exterior/jakuza.png",
     },
   ]
 
   const allExteriorImages = [
-    { src: "/ChalupaUStryka/images/exterior/chalupa-exterior-main.jpg", alt: "Chalupa u Strýka - Exteriér" },
-    { src: "/ChalupaUStryka/images/exterior/terrace.jpg", alt: "Terasa" },
-    { src: "/ChalupaUStryka/images/exterior/playground.jpg", alt: "Detské ihrisko" },
-    { src: "/ChalupaUStryka/images/exterior/fireplace.jpg", alt: "Ohnisko" },
-    { src: "/ChalupaUStryka/images/exterior/pool.jpg", alt: "Bazén" },
-    { src: "/ChalupaUStryka/images/exterior/garden.jpg", alt: "Záhrada" },
+    { src: "/ChalupaUStryka/images/exterior/1.png", alt: "Bazén s posedením" },
+    { src: "/ChalupaUStryka/images/exterior/2.png", alt: "Kúpacia kaďa" },
+    { src: "/ChalupaUStryka/images/exterior/3.png", alt: "Kúpacia kaďa v zime" },
+    { src: "/ChalupaUStryka/images/exterior/4.png", alt: "Visiacie posedenie" },
+    { src: "/ChalupaUStryka/images/exterior/5.png", alt: "Výrivka" },
+    { src: "/ChalupaUStryka/images/exterior/6.png", alt: "Gril" },
+    { src: "/ChalupaUStryka/images/exterior/7.png", alt: "Basketbalový kôš" },
+    { src: "/ChalupaUStryka/images/exterior/8.png", alt: "Šípky" },
+    { src: "/ChalupaUStryka/images/exterior/9.png", alt: "Stolný tenis" },
+    { src: "/ChalupaUStryka/images/exterior/10.png", alt: "Zimné posedenie" },
+    { src: "/ChalupaUStryka/images/exterior/11.png", alt: "Bazén" },
   ]
 
   return (
@@ -151,54 +156,93 @@ export default function ExteriorSection() {
                     className="flex items-start gap-4 p-4 rounded-lg transition-all duration-300"
                   >
                     <div className="mt-1">
+                      {item.icon === "pool" && (
+                        <motion.svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="text-primary"
+                          width="24"
+                          height="24"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          whileHover={{ rotate: 10, scale: 1.2 }}
+                        >
+                          <path d="M2 20c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2" />
+                          <path d="M6 16V4" />
+                          <path d="M10 16V4" />
+                        </motion.svg>
+                      )}
+                      {item.icon === "tub" && (
+                        <motion.svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="text-primary"
+                          width="24"
+                          height="24"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          whileHover={{ rotate: 10, scale: 1.2 }}
+                        >
+                          <path d="M3 12h18v4a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z" />
+                          <path d="M7 12V4a2 2 0 0 1 4 0v8" />
+                        </motion.svg>
+                      )}
                       {item.icon === "spa" && (
                         <motion.svg
                           xmlns="http://www.w3.org/2000/svg"
+                          className="text-primary"
                           width="24"
                           height="24"
-                          viewBox="0 0 24 24"
                           fill="none"
+                          viewBox="0 0 24 24"
                           stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          className="text-primary"
                           whileHover={{ rotate: 10, scale: 1.2 }}
                         >
-                          <path d="M20.7 9c.4 0 .7.2.9.6.2.4.1.8-.2 1.1-3.8 3.2-7.1 7.4-8.3 12.3-.1.4-.5.7-.9.7-.4 0-.8-.3-.9-.7-1.2-4.9-4.5-9.1-8.3-12.3-.3-.3-.4-.7-.2-1.1.2-.4.5-.6.9-.6 6.9 0 13.1 0 17 0z" />
-                          <path d="M9.1 9c-.5-3.4-1.5-5.6-3.1-7" />
-                          <path d="M14.9 9c.5-3.4 1.5-5.6 3.1-7" />
+                          <path d="M20.7 9c.4 0 .7.2.9.6.2.4.1.8-.2 1.1-3.8 3.2-7.1 7.4-8.3 12.3-.1.4-.5.7-.9.7s-.8-.3-.9-.7c-1.2-4.9-4.5-9.1-8.3-12.3-.3-.3-.4-.7-.2-1.1.2-.4.5-.6.9-.6 6.9 0 13.1 0 17 0z" />
                         </motion.svg>
                       )}
-                      {item.icon === "flame" && (
+                      {item.icon === "sauna" && (
                         <motion.svg
                           xmlns="http://www.w3.org/2000/svg"
+                          className="text-primary"
                           width="24"
                           height="24"
-                          viewBox="0 0 24 24"
                           fill="none"
+                          viewBox="0 0 24 24"
                           stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          className="text-primary"
                           whileHover={{ rotate: 10, scale: 1.2 }}
                         >
-                          <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+                          <path d="M4 22V2h16v20" />
+                          <path d="M10 6h4" />
+                          <path d="M10 10h4" />
+                          <path d="M10 14h4" />
+                          <path d="M10 18h4" />
                         </motion.svg>
                       )}
                       {item.icon === "sun" && (
                         <motion.svg
                           xmlns="http://www.w3.org/2000/svg"
+                          className="text-primary"
                           width="24"
                           height="24"
-                          viewBox="0 0 24 24"
                           fill="none"
+                          viewBox="0 0 24 24"
                           stroke="currentColor"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
-                          className="text-primary"
                           whileHover={{ rotate: 45, scale: 1.2 }}
                         >
                           <circle cx="12" cy="12" r="4" />
@@ -210,6 +254,25 @@ export default function ExteriorSection() {
                           <path d="M20 12h2" />
                           <path d="m6.34 17.66-1.41 1.41" />
                           <path d="m19.07 4.93-1.41 1.41" />
+                        </motion.svg>
+                      )}
+                      {item.icon === "jump" && (
+                        <motion.svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="text-primary"
+                          width="24"
+                          height="24"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          whileHover={{ rotate: 15, scale: 1.2 }}
+                        >
+                          <circle cx="12" cy="4" r="2" />
+                          <path d="M12 6v8" />
+                          <path d="M9 20h6l-1-6h-4z" />
                         </motion.svg>
                       )}
                     </div>
@@ -231,7 +294,7 @@ export default function ExteriorSection() {
             >
               <h4 className="text-xl font-semibold mb-4 text-primary">Aktivity a zábava</h4>
               <div className="grid grid-cols-1 gap-4">
-                {[
+               {[
                   {
                     title: "Vonkajšia letná kuchyňa",
                     description: "Plne vybavená letná kuchyňa s grilom, udiarňou a pizza pecou",
@@ -247,6 +310,21 @@ export default function ExteriorSection() {
                     description: "Krytá terasa s vonkajším krbom, LED osvetlením a bluetooth reproduktormi",
                     icon: "music",
                   },
+                  {
+                    title: "Trampolína a preliezky",
+                    description: "Detská trampolína, šmýkačka, preliezky a domček pre najmenších",
+                    icon: "kids",
+                  },
+                  {
+                    title: "Elektronické šípky",
+                    description: "Elektronické terče na šípky – ideálne na zábavné večery s priateľmi",
+                    icon: "target",
+                  },
+                  {
+                    title: "Kotlík a ohnisko",
+                    description: "Kotlík na guláš, otvorené ohnisko a posedenie pri táboráku",
+                    icon: "fire",
+                  },
                 ].map((item, index) => (
                   <motion.div
                     key={index}
@@ -255,60 +333,60 @@ export default function ExteriorSection() {
                   >
                     <div className="mt-1">
                       {item.icon === "utensils" && (
-                        <motion.svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="text-primary"
-                          whileHover={{ rotate: 10, scale: 1.2 }}
-                        >
+                        // kuchyňa / jedlo
+                        <motion.svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                          strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"
+                          whileHover={{ rotate: 10, scale: 1.2 }}>
                           <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" />
                           <path d="M7 2v20" />
-                          <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" />
+                          <path d="M21 15V2a5 5 0 0 0-5 5v6a2 2 0 0 0 2 2h3v7" />
                         </motion.svg>
                       )}
                       {item.icon === "tennis" && (
-                        <motion.svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="text-primary"
-                          whileHover={{ rotate: 10, scale: 1.2 }}
-                        >
+                        // šport
+                        <motion.svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                          strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"
+                          whileHover={{ rotate: 10, scale: 1.2 }}>
                           <circle cx="12" cy="12" r="10" />
                           <path d="M19 12c0-3.87-3.13-7-7-7" />
                           <path d="M5 12c0 3.87 3.13 7 7 7" />
                         </motion.svg>
                       )}
                       {item.icon === "music" && (
-                        <motion.svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="text-primary"
-                          whileHover={{ rotate: 10, scale: 1.2 }}
-                        >
+                        // večerný relax
+                        <motion.svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                          strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"
+                          whileHover={{ rotate: 10, scale: 1.2 }}>
                           <path d="M9 18V5l12-2v13" />
                           <circle cx="6" cy="18" r="3" />
                           <circle cx="18" cy="16" r="3" />
+                        </motion.svg>
+                      )}
+                      {item.icon === "kids" && (
+                        // detské aktivity
+                        <motion.svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                          strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"
+                          whileHover={{ rotate: 10, scale: 1.2 }}>
+                          <circle cx="12" cy="6" r="4" />
+                          <path d="M5 22v-2a7 7 0 0 1 14 0v2" />
+                        </motion.svg>
+                      )}
+                      {item.icon === "target" && (
+                        // šípky
+                        <motion.svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                          strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"
+                          whileHover={{ rotate: 10, scale: 1.2 }}>
+                          <circle cx="12" cy="12" r="10" />
+                          <circle cx="12" cy="12" r="6" />
+                          <circle cx="12" cy="12" r="2" />
+                        </motion.svg>
+                      )}
+                      {item.icon === "fire" && (
+                        // ohnisko
+                        <motion.svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                          strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"
+                          whileHover={{ rotate: 10, scale: 1.2 }}>
+                          <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
                         </motion.svg>
                       )}
                     </div>
