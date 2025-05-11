@@ -26,7 +26,7 @@ export default function InteriorSection() {
       id: "spolocenska",
       title: "Spoločenská miestnosť",
       description:
-        "Spoločenská miestnosť s gaučom a televízorom so satelitným alebo internetovým príjmom a službou Netflix. Celá rodina či skupina priateľov sa môže zabaviť aj pri rôznych spoločenských hrách, alebo pri stolnom futbale.",
+        "Spoločenská miestnosť s gaučom a televízorom so satelitným alebo internetovým príjmom a službou Skylink. Celá rodina či skupina priateľov sa môže zabaviť aj pri rôznych spoločenských hrách, alebo pri stolnom futbale.",
       images: [
         { src: "/ChalupaUStryka/images/interior/common/1.png", alt: "Spoločenská miestnosť 1" },
         { src: "/ChalupaUStryka/images/interior/common/2.png", alt: "Spoločenská miestnosť 2" },
@@ -38,7 +38,7 @@ export default function InteriorSection() {
       id: "kuchyna",
       title: "Kuchyňa",
       description:
-        "Na prípravu vlastnej stravy je k dispozícii plne vybavená kuchyňa, kde nechýba elektrický sporák s rúrou, chladnička s mrazničkou, mikrovlnná rúra, umývačka riadu, rýchlovarná kanvica, kávovar, hriankovač a jedálenské posedenie.",
+        "K dispozícii je priestranná a moderne zariadená kuchyňa, ktorá ponúka ideálne podmienky na prípravu domácich jedál. Súčasťou vybavenia sú aj praktické doplnky ako rýchlovarná kanvica, hriankovač, či kompletný kuchynský riad, ktoré zabezpečujú maximálne pohodlie počas pobytu.",
       images: [
         { src: "/ChalupaUStryka/images/interior/kitchen/1.png", alt: "Kuchyňa 1" },
         { src: "/ChalupaUStryka/images/interior/kitchen/2.png", alt: "Jedálenský stôl" },
@@ -50,7 +50,7 @@ export default function InteriorSection() {
       id: "kupelne",
       title: "Kúpeľne",
       description:
-        "K vybaveniu patria tiež dve kúpeľne s toaletou a sprchovacím kútom, pričom v jednej sa nachádza infrasauna pre dve osoby. K dispozícii sú posteľné obliečky, plachty do sauny v počte 9 kusov a uteráky na ruky.",
+        "K dispozícii sú dve moderne vybavené kúpeľne s toaletou a sprchovacím kútom. Jedna z nich je navyše vybavená infrasaunou pre dve osoby, ideálnou na relax po aktívnom dni. Ubytovanie zahŕňa aj všetko potrebné pre váš komfort – od posteľnej bielizne až po uteráky a saunové plachty.",
       images: [
         { src: "/ChalupaUStryka/images/interior/bathroom/1.png", alt: "Kúpeľňa 1" },
         { src: "/ChalupaUStryka/images/interior/bathroom/2.png", alt: "Kúpeľňa 2" },
@@ -87,7 +87,12 @@ export default function InteriorSection() {
                   whileTap={{ y: 0 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 >
-                  <TabsTrigger value={space.id} className="text-sm md:text-base" onClick={() => setActiveTab(space.id)}>
+                  <TabsTrigger
+                    key={space.id}
+                    value={space.id}
+                    onClick={() => setActiveTab(space.id)}
+                    className="flex-1 text-sm md:text-base text-center py-2 rounded-lg border border-transparent data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:border-primary transition"
+                  >
                     {space.title}
                   </TabsTrigger>
                 </motion.div>
@@ -117,21 +122,21 @@ export default function InteriorSection() {
                       <AnimatedElement animation="slideLeft" delay={0.5}>
                           <li className="flex items-start gap-2">
                             <div>
-                              <span className="font-medium">Spálňa 1:</span> Manželská posteľ + možnosť cestovnej postieľky
+                              <span className="font-medium">Spálňa 1:</span> Manželská posteľ, možnosť cestovnej postieľky
                             </div>
                           </li>
                         </AnimatedElement>
                         <AnimatedElement animation="slideLeft" delay={0.6}>
                           <li className="flex items-start gap-2">
                             <div>
-                              <span className="font-medium">Spálňa 2:</span> Manželská posteľ + jednolôžko
+                              <span className="font-medium">Spálňa 2:</span> Manželská posteľ, jednolôžko
                             </div>
                           </li>
                         </AnimatedElement>
                         <AnimatedElement animation="slideLeft" delay={0.7}>
                           <li className="flex items-start gap-2">
                             <div>
-                              <span className="font-medium">Spálňa 3:</span> Manželská posteľ + jednolôžko + prístelka
+                              <span className="font-medium">Spálňa 3:</span> Manželská posteľ, jednolôžko, prístelka
                             </div>
                           </li>
                         </AnimatedElement>
@@ -181,7 +186,7 @@ export default function InteriorSection() {
                             <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
                               <CheckCircle className="h-5 w-5 text-primary" />
                             </motion.div>
-                            <span>Elektrický sporák s rúrou</span>
+                            <span>Indukčná varná doska</span>
                           </li>
                         </AnimatedElement>
                         <AnimatedElement animation="slideLeft" delay={0.3}>
@@ -189,7 +194,7 @@ export default function InteriorSection() {
                             <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
                               <CheckCircle className="h-5 w-5 text-primary" />
                             </motion.div>
-                            <span>Chladnička s mrazničkou</span>
+                            <span>Odsávač pár</span>
                           </li>
                         </AnimatedElement>
                         <AnimatedElement animation="slideLeft" delay={0.4}>
@@ -197,7 +202,7 @@ export default function InteriorSection() {
                             <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
                               <CheckCircle className="h-5 w-5 text-primary" />
                             </motion.div>
-                            <span>Mikrovlnná rúra</span>
+                            <span>Elektrická rúra</span>
                           </li>
                         </AnimatedElement>
                         <AnimatedElement animation="slideLeft" delay={0.5}>
@@ -213,7 +218,31 @@ export default function InteriorSection() {
                             <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
                               <CheckCircle className="h-5 w-5 text-primary" />
                             </motion.div>
-                            <span>Kávovar a rýchlovarná kanvica</span>
+                            <span>Mikrovlnná rúra</span>
+                          </li>
+                        </AnimatedElement>
+                        <AnimatedElement animation="slideLeft" delay={0.6}>
+                          <li className="flex items-center gap-2">
+                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
+                              <CheckCircle className="h-5 w-5 text-primary" />
+                            </motion.div>
+                            <span>Pákový kávovar na mletú kávu</span>
+                          </li>
+                        </AnimatedElement>
+                        <AnimatedElement animation="slideLeft" delay={0.6}>
+                          <li className="flex items-center gap-2">
+                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
+                              <CheckCircle className="h-5 w-5 text-primary" />
+                            </motion.div>
+                            <span>Chladnička s mrazničkou</span>
+                          </li>
+                        </AnimatedElement>
+                        <AnimatedElement animation="slideLeft" delay={0.6}>
+                          <li className="flex items-center gap-2">
+                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
+                              <CheckCircle className="h-5 w-5 text-primary" />
+                            </motion.div>
+                            <span>Jedálenské posedenie</span>
                           </li>
                         </AnimatedElement>
                       </>
@@ -222,39 +251,12 @@ export default function InteriorSection() {
                       <>
                         <AnimatedElement animation="slideLeft" delay={0.2}>
                           <li className="flex items-center gap-2">
-                            <span>Kúpeľňa 1: infra saunou pre dve osoby + sprchový kút + toaleta + dvojumývadlo</span>
+                            <span>Kúpeľňa 1: Infra saunou pre dve osoby, sprchový kút, toaleta, dvojumývadlo</span>
                           </li>
                         </AnimatedElement>
                         <AnimatedElement animation="slideLeft" delay={0.3}>
                           <li className="flex items-center gap-2">
-                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
-                              <CheckCircle className="h-5 w-5 text-primary" />
-                            </motion.div>
-                            <span>Kúpeľňa 2: sprchový kút + toaleta + dvojumývadlo</span>
-                          </li>
-                        </AnimatedElement>
-                        <AnimatedElement animation="slideLeft" delay={0.4}>
-                          <li className="flex items-center gap-2">
-                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
-                              <CheckCircle className="h-5 w-5 text-primary" />
-                            </motion.div>
-                            <span>Posteľné obliečky</span>
-                          </li>
-                        </AnimatedElement>
-                        <AnimatedElement animation="slideLeft" delay={0.5}>
-                          <li className="flex items-center gap-2">
-                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
-                              <CheckCircle className="h-5 w-5 text-primary" />
-                            </motion.div>
-                            <span>Plachty do sauny (9 ks)</span>
-                          </li>
-                        </AnimatedElement>
-                        <AnimatedElement animation="slideLeft" delay={0.6}>
-                          <li className="flex items-center gap-2">
-                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
-                              <CheckCircle className="h-5 w-5 text-primary" />
-                            </motion.div>
-                            <span>Uteráky na ruky</span>
+                            <span>Kúpeľňa 2: Sprchový kút, toaleta, dvojumývadlo</span>
                           </li>
                         </AnimatedElement>
                       </>
