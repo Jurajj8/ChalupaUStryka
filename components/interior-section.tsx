@@ -91,7 +91,7 @@ export default function InteriorSection() {
                     key={space.id}
                     value={space.id}
                     onClick={() => setActiveTab(space.id)}
-                    className="flex-1 text-sm md:text-base text-center py-2 rounded-lg border border-transparent data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:border-primary transition"
+                    className="flex-1 text-sm p-0 md:text-base text-center py-2 rounded-lg border border-transparent data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:border-primary transition"
                   >
                     {space.title}
                   </TabsTrigger>
