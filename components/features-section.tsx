@@ -14,7 +14,7 @@ export default function FeaturesSection() {
     {
       title: "Plne vybavená kuchyňa",
       description:
-        "Elektrický sporák s rúrou, chladnička s mrazničkou, mikrovlnná rúra, umývačka riadu a ďalšie vybavenie.",
+        "K dispozícii je priestranná a moderne zariadená kuchyňa, ktorá ponúka ideálne podmienky na prípravu domácich jedál.",
       icon: "utensils",
     },
     {

@@ -64,7 +64,13 @@ export default function StatsSection() {
                 {stat.icon}
               </motion.div>
               <h3 className="text-3xl font-bold mb-2">
-                <AnimatedCounter end={stat.value} duration={2} delay={0.5 + index * 0.2} suffix={stat.suffix || ""} />
+              <AnimatedCounter
+                end={stat.value}
+                duration={2}
+                delay={0.5 + index * 0.2}
+                suffix={stat.suffix || ""}
+                decimals={stat.decimals}
+              />
               </h3>
               <p className="text-muted-foreground">{stat.label}</p>
             </motion.div>

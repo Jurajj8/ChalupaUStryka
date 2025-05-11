@@ -38,7 +38,7 @@ export default function InteriorSection() {
       id: "kuchyna",
       title: "Kuchyňa",
       description:
-        "K dispozícii je priestranná a moderne zariadená kuchyňa, ktorá ponúka ideálne podmienky na prípravu domácich jedál. Súčasťou vybavenia sú aj praktické doplnky ako rýchlovarná kanvica, hriankovač, či kompletný kuchynský riad, ktoré zabezpečujú maximálne pohodlie počas pobytu.",
+        "Súčasťou vybavenia sú aj praktické doplnky ako rýchlovarná kanvica, hriankovač, či kompletný kuchynský riad, ktoré zabezpečujú maximálne pohodlie počas pobytu.",
       images: [
         { src: "/ChalupaUStryka/images/interior/kitchen/1.png", alt: "Kuchyňa 1" },
         { src: "/ChalupaUStryka/images/interior/kitchen/2.png", alt: "Jedálenský stôl" },

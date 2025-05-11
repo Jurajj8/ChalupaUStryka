@@ -10,6 +10,7 @@ interface AnimatedCounterProps {
   prefix?: string
   suffix?: string
   className?: string
+  decimals?: number
 }
 
 export default function AnimatedCounter({
@@ -19,6 +20,7 @@ export default function AnimatedCounter({
   prefix = "",
   suffix = "",
   className = "",
+  decimals = 0,
 }: AnimatedCounterProps) {
   const [count, setCount] = useState(0)
   const ref = useRef(null)
@@ -37,15 +39,14 @@ export default function AnimatedCounter({
         const progress = (timestamp - startTime) / (duration * 1000)
 
         if (progress < 1) {
-          const currentCount = Math.floor(end * progress)
-          setCount(currentCount)
+          const currentCount = (end * progress).toFixed(decimals)
+          setCount(Number(currentCount))
           animationFrameId = requestAnimationFrame(startAnimation)
         } else {
           setCount(end)
         }
       }
 
-      // Delay the start of the animation
       const timeoutId = setTimeout(() => {
         animationFrameId = requestAnimationFrame(startAnimation)
       }, delay * 1000)
@@ -57,7 +58,7 @@ export default function AnimatedCounter({
         }
       }
     }
-  }, [isInView, end, duration, delay, hasAnimated])
+  }, [isInView, end, duration, delay, hasAnimated, decimals])
 
   return (
     <motion.div
