@@ -63,11 +63,14 @@ export default function StatsSection() {
               >
                 {stat.icon}
               </motion.div>
-              <h3 className="text-3xl font-bold mb-2">
-                {stat.label || ""}
-                {stat.decimals ? stat.value.toFixed(stat.decimals) : stat.value}
-                {stat.suffix || ""}
+              <h3 className="text-3xl font-bold mb-2 leading-snug">
+                <div>{stat.label}</div>
+                <div>
+                  {stat.decimals ? stat.value.toFixed(stat.decimals) : stat.value}
+                  {stat.suffix || ""}
+                </div>
               </h3>
+
               <p className="text-muted-foreground">{stat.label}</p>
             </motion.div>
           ))}
