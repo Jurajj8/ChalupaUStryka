@@ -113,12 +113,35 @@ export default function InteriorSection() {
                   <ul className="space-y-2">
                     {space.id === "spalne" && (
                       <>
+                      {/* Rozloženie spální */}
+                      <AnimatedElement animation="slideLeft" delay={0.5}>
+                          <li className="flex items-start gap-2">
+                            <div>
+                              <span className="font-medium">Spálňa 1:</span> Manželská posteľ, možnosť cestovnej postieľky
+                            </div>
+                          </li>
+                        </AnimatedElement>
+                        <AnimatedElement animation="slideLeft" delay={0.6}>
+                          <li className="flex items-start gap-2">
+                            <div>
+                              <span className="font-medium">Spálňa 2:</span> Manželská posteľ + jednolôžko
+                            </div>
+                          </li>
+                        </AnimatedElement>
+                        <AnimatedElement animation="slideLeft" delay={0.7}>
+                          <li className="flex items-start gap-2">
+                            <div>
+                              <span className="font-medium">Spálňa 3:</span> Manželská posteľ + jednolôžko + prístelka
+                            </div>
+                          </li>
+                        </AnimatedElement>
                         <AnimatedElement animation="slideLeft" delay={0.2}>
                           <li className="flex items-center gap-2">
                             <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
                               <CheckCircle className="h-5 w-5 text-primary" />
                             </motion.div>
-                            <span>8 pevných lôžok</span>
+                            <span>
+                              8 pevných lôžok</span>
                           </li>
                         </AnimatedElement>
                         <AnimatedElement animation="slideLeft" delay={0.3}>
@@ -135,38 +158,6 @@ export default function InteriorSection() {
                               <CheckCircle className="h-5 w-5 text-primary" />
                             </motion.div>
                             <span>Cestovná postieľka</span>
-                          </li>
-                        </AnimatedElement>
-                                      
-                        {/* Rozloženie spální */}
-                        <AnimatedElement animation="slideLeft" delay={0.5}>
-                          <li className="flex items-start gap-2">
-                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }} className="mt-1">
-                              <CheckCircle className="h-5 w-5 text-primary" />
-                            </motion.div>
-                            <div>
-                              <span className="font-medium">Spálňa 1:</span> Manželská posteľ, možnosť cestovnej postieľky
-                            </div>
-                          </li>
-                        </AnimatedElement>
-                        <AnimatedElement animation="slideLeft" delay={0.6}>
-                          <li className="flex items-start gap-2">
-                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }} className="mt-1">
-                              <CheckCircle className="h-5 w-5 text-primary" />
-                            </motion.div>
-                            <div>
-                              <span className="font-medium">Spálňa 2:</span> Manželská posteľ + jednolôžko
-                            </div>
-                          </li>
-                        </AnimatedElement>
-                        <AnimatedElement animation="slideLeft" delay={0.7}>
-                          <li className="flex items-start gap-2">
-                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }} className="mt-1">
-                              <CheckCircle className="h-5 w-5 text-primary" />
-                            </motion.div>
-                            <div>
-                              <span className="font-medium">Spálňa 3:</span> Manželská posteľ + jednolôžko + prístelka
-                            </div>
                           </li>
                         </AnimatedElement>
                       </>
