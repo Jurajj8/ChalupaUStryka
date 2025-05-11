@@ -79,7 +79,7 @@ export default function InteriorSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <TabsList className="flex w-full justify-between mb-8 p-1">
+            <TabsList className="grid w-full grid-cols-4 mb-8 p-1 text-center">
               {interiorSpaces.map((space, index) => (
                 <motion.div
                   key={space.id}
@@ -91,7 +91,7 @@ export default function InteriorSection() {
                     key={space.id}
                     value={space.id}
                     onClick={() => setActiveTab(space.id)}
-                    className="flex-1 text-sm p-0 md:text-base text-center py-2 rounded-lg border border-transparent data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:border-primary transition"
+                    className="w-full text-sm md:text-base text-center py-2 rounded-lg border border-transparent data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:border-primary transition"
                   >
                     {space.title}
                   </TabsTrigger>
