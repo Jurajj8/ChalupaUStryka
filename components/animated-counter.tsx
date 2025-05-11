@@ -28,8 +28,11 @@ export default function AnimatedCounter({
   const [hasAnimated, setHasAnimated] = useState(false)
 
   useEffect(() => {
+    console.log("In view:", isInView, "Has animated:", hasAnimated)
+
     if (isInView && !hasAnimated) {
       setHasAnimated(true)
+      console.log("Starting animation...")
 
       let startTime: number
       let animationFrameId: number
@@ -41,9 +44,11 @@ export default function AnimatedCounter({
         if (progress < 1) {
           const currentCount = (end * progress).toFixed(decimals)
           setCount(Number(currentCount))
+          console.log("Progress:", progress.toFixed(2), "Value:", currentCount)
           animationFrameId = requestAnimationFrame(startAnimation)
         } else {
           setCount(end)
+          console.log("Animation complete")
         }
       }
 
