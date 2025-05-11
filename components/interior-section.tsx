@@ -79,7 +79,7 @@ export default function InteriorSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 text-center">
+            <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mb-8 p-1 text-center">
               {interiorSpaces.map((space, index) => (
                 <motion.div
                   key={space.id}
