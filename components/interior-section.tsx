@@ -117,7 +117,7 @@ export default function InteriorSection() {
                       <AnimatedElement animation="slideLeft" delay={0.5}>
                           <li className="flex items-start gap-2">
                             <div>
-                              <span className="font-medium">Spálňa 1:</span> Manželská posteľ, možnosť cestovnej postieľky
+                              <span className="font-medium">Spálňa 1:</span> Manželská posteľ + možnosť cestovnej postieľky
                             </div>
                           </li>
                         </AnimatedElement>
@@ -133,31 +133,6 @@ export default function InteriorSection() {
                             <div>
                               <span className="font-medium">Spálňa 3:</span> Manželská posteľ + jednolôžko + prístelka
                             </div>
-                          </li>
-                        </AnimatedElement>
-                        <AnimatedElement animation="slideLeft" delay={0.2}>
-                          <li className="flex items-center gap-2">
-                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
-                              <CheckCircle className="h-5 w-5 text-primary" />
-                            </motion.div>
-                            <span>
-                              8 pevných lôžok</span>
-                          </li>
-                        </AnimatedElement>
-                        <AnimatedElement animation="slideLeft" delay={0.3}>
-                          <li className="flex items-center gap-2">
-                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
-                              <CheckCircle className="h-5 w-5 text-primary" />
-                            </motion.div>
-                            <span>1 prístelka</span>
-                          </li>
-                        </AnimatedElement>
-                        <AnimatedElement animation="slideLeft" delay={0.4}>
-                          <li className="flex items-center gap-2">
-                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
-                              <CheckCircle className="h-5 w-5 text-primary" />
-                            </motion.div>
-                            <span>Cestovná postieľka</span>
                           </li>
                         </AnimatedElement>
                       </>
@@ -247,10 +222,7 @@ export default function InteriorSection() {
                       <>
                         <AnimatedElement animation="slideLeft" delay={0.2}>
                           <li className="flex items-center gap-2">
-                            <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
-                              <CheckCircle className="h-5 w-5 text-primary" />
-                            </motion.div>
-                            <span>2 kúpeľne s toaletou</span>
+                            <span>Kúpeľňa 1: infra saunou pre dve osoby + sprchový kút + toaleta + dvojumývadlo</span>
                           </li>
                         </AnimatedElement>
                         <AnimatedElement animation="slideLeft" delay={0.3}>
@@ -258,7 +230,7 @@ export default function InteriorSection() {
                             <motion.div whileHover={{ scale: 1.1, rotate: 5 }}>
                               <CheckCircle className="h-5 w-5 text-primary" />
                             </motion.div>
-                            <span>Infrasauna pre 2 osoby</span>
+                            <span>Kúpeľňa 2: sprchový kút + toaleta + dvojumývadlo</span>
                           </li>
                         </AnimatedElement>
                         <AnimatedElement animation="slideLeft" delay={0.4}>
