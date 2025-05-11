@@ -1,19 +1,16 @@
 let userConfig = undefined;
 try {
-  // Pokusíme sa najprv importovať ESM
   userConfig = await import('./v0-user-next.config.mjs');
 } catch (e) {
   try {
-    // Ak to zlyhá, použijeme CJS import
     userConfig = await import("./v0-user-next.config");
   } catch (innerError) {
-    // Ignorujeme chybu
   }
 }
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",  // <=== enables static exports
+  output: "export",
   reactStrictMode: true,
   basePath: '/ChalupaUStryka',
   assetPrefix: '/ChalupaUStryka'

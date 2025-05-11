@@ -24,8 +24,8 @@ export default function ContactSection() {
             {
               title: "Telefón",
               description: "Zavolajte nám a dohodnite si rezerváciu",
-              contact: "+421 900 000 000",
-              href: "tel:+421900000000",
+              contact: "+421 918 326 431",
+              href: "tel:+421918326431",
               icon: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

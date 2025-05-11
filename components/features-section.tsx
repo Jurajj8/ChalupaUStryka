@@ -19,12 +19,12 @@ export default function FeaturesSection() {
     },
     {
       title: "Relaxačná zóna",
-      description: "Spoločenská miestnosť s gaučom, televízorom so satelitným príjmom a službou Netflix.",
+      description: "Spoločenská miestnosť s gaučom, televízorom so satelitným príjmom a službou SkyLink.",
       icon: "tv",
     },
     {
       title: "Wellness",
-      description: "Infrasauna pre dve osoby, kúpacia kaďa a v lete bazén na záhrade.",
+      description: "Infra sauna pre dve osoby, kúpacia kaďa s hydromasážnymi tryskami, v lete nadkrytý bazén s pieskovou filtráciou, vyhrievaný tepelným čerpadlom.",
       icon: "spa",
     },
     {

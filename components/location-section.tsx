@@ -154,7 +154,7 @@ export default function LocationSection() {
               className="absolute bottom-4 right-4 z-20 flex gap-2"
             >
               <a
-                href="https://maps.google.com/?q=Klubina+Slovakia"
+                href="https://www.google.com/maps/place/Chalupa+u+Str%C3%BDka/@49.3538678,18.8951198,17z/data=!4m16!1m9!3m8!1s0x4714451607843951:0xa63fb2bc7729a684!2sChalupa+u+Str%C3%BDka!8m2!3d49.3538643!4d18.8976947!9m1!1b1!16s%2Fg%2F11pyzgcdqw!3m5!1s0x4714451607843951:0xa63fb2bc7729a684!8m2!3d49.3538643!4d18.8976947!16s%2Fg%2F11pyzgcdqw?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-white px-3 py-1.5 rounded-md text-sm font-medium flex items-center gap-1 hover:bg-primary/90 transition-colors"
@@ -180,7 +180,7 @@ export default function LocationSection() {
                 Google Maps
               </a>
               <a
-                href="https://waze.com/ul?ll=49.3833,18.8667&navigate=yes"
+                href="https://ul.waze.com/ul?place=ChIJUTmEBxZFFEcRhKYpd7yyP6Y&ll=49.35386430%2C18.89769470&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-primary border border-primary px-3 py-1.5 rounded-md text-sm font-medium flex items-center gap-1 hover:bg-primary/10 transition-colors"
