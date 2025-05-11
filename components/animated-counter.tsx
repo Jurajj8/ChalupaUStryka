@@ -28,15 +28,14 @@ export default function AnimatedCounter({
   const [hasAnimated, setHasAnimated] = useState(false)
 
   useEffect(() => {
-    let startTime: number
-    let animationFrameId: number
-    let timeoutId: NodeJS.Timeout
-  
     if (isInView && !hasAnimated) {
       setHasAnimated(true)
   
+      let startTime: number | undefined
+      let animationFrameId: number
+  
       const startAnimation = (timestamp: number) => {
-        if (!startTime) startTime = timestamp
+        if (startTime === undefined) startTime = timestamp
         const progress = (timestamp - startTime) / (duration * 1000)
   
         if (progress < 1) {
@@ -48,18 +47,17 @@ export default function AnimatedCounter({
         }
       }
   
-      timeoutId = setTimeout(() => {
+      const timeoutId = setTimeout(() => {
         animationFrameId = requestAnimationFrame(startAnimation)
       }, delay * 1000)
-    }
   
-    return () => {
-      clearTimeout(timeoutId)
-      if (animationFrameId) {
-        cancelAnimationFrame(animationFrameId)
+      return () => {
+        clearTimeout(timeoutId)
+        if (animationFrameId) cancelAnimationFrame(animationFrameId)
       }
     }
   }, [isInView, end, duration, delay, hasAnimated, decimals])
+  
   
   return (
     <motion.div
