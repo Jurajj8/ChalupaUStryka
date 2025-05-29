@@ -73,19 +73,6 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-      function ({ addUtilities }: { addUtilities: (utilities: object, options?: object) => void }) {
-        addUtilities({
-          '.scrollbar-hide': {
-            /* Chrome, Safari and Opera */
-            '&::-webkit-scrollbar': {
-              display: 'none'
-            },
-            /* Firefox */
-            '-ms-overflow-style': 'none',
-            'scrollbar-width': 'none',
-          }
-        })
-      }
     },
   },
   plugins: [require("tailwindcss-animate")],
