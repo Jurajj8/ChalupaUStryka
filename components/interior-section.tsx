@@ -79,13 +79,27 @@ export default function InteriorSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <TabsList className="grid w-full grid-cols-4 mb-8 text-center">
-              {interiorSpaces.map((space, index) => (
+            <TabsList
+              className="
+                mb-8 text-center
+                grid grid-cols-4
+                overflow-x-auto gap-2
+                sm:grid-cols-4
+                sm:overflow-x-visible
+                w-full
+                min-w-0
+                px-1
+                scrollbar-hide
+              "
+              style={{ WebkitOverflowScrolling: "touch" }}
+            >
+               {interiorSpaces.map((space, index) => (
                 <motion.div
                   key={space.id}
                   whileHover={{ y: -3 }}
                   whileTap={{ y: 0 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  className="min-w-[140px]"
                 >
                   <TabsTrigger
                     key={space.id}
