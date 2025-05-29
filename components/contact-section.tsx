@@ -183,6 +183,7 @@ export default function ContactSection() {
               >
                 <h4 className="font-semibold mb-2">Poznámka:</h4>
                 <ul className="space-y-1 text-sm">
+                  <motion.li whileHover={{ x: 3 }}>• 9 ks plachty do sauny, 2x  utierky, 3x uteráky na ruky. Osušky si prosím prineste vlastné.</motion.li>
                   <motion.li whileHover={{ x: 3 }}>• Ceny sú uvedené za celý objekt pre max. 9 osôb</motion.li>
                   <motion.li whileHover={{ x: 3 }}>• Minimálna dĺžka pobytu: 2 noci</motion.li>
                   <motion.li whileHover={{ x: 3 }}>• Záloha: 50% z celkovej ceny pobytu</motion.li>
