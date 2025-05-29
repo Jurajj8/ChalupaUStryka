@@ -53,6 +53,22 @@ export default function LocationSection() {
       seasonality: "Celoročne (v zime lyžovanie)",
       image: "/ChalupaUStryka/images/attractions/mala-fatra.jpg",
     },
+    {
+      title: "Vychylovka – múzeum Kysuckej dediny s lesnou železnicou",
+      description: "Múzeum kysuckej dediny je skanzen nachádzajúci sa neďaleko Novej Bystrice, v jej časti Vychylovka v údolí Chmúra, ktorá je súčasťou chránenej krajinnej oblasti Kysuce.",
+      distance: "17 km",
+      duration: "19 min",
+      seasonality: "Celoročne",
+      image: "/ChalupaUStryka/images/attractions/vychylovka.jpg",
+    },
+    {
+      title: "Kysucká hvezdáreň v Kysuckom Novom Meste ",
+      description: "Pre návštevníkov ponúka sprostredkovanie najnovších objavov a poznatkov prostredníctvom prednášok, výstav, astrotýždňa s možnosťou priamej účasti sa na pozorovaní vesmírnych úkazov a objektov.",
+      distance: "23 km",
+      duration: "27 min",
+      seasonality: "Celoročne",
+      image: "/ChalupaUStryka/images/attractions/hvezdaren.jpg",
+    },
   ]
 
   // const cities = [
