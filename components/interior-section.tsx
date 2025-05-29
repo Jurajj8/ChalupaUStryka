@@ -81,11 +81,8 @@ export default function InteriorSection() {
           >
             <TabsList
               className="
-                flex flex-nowrap overflow-x-auto gap-x-2 mb-8 text-center w-full
-                md:grid md:grid-cols-4 md:gap-x-0 md:overflow-visible
-                px-1
+                flex flex-wrap justify-center gap-2 mb-8 w-full p-0 md:grid md:grid-cols-4 md:gap-x-0 md:overflow-visible h-auto
               "
-              style={{ WebkitOverflowScrolling: "touch" }}
             >
               {interiorSpaces.map((space, index) => (
                 <motion.div
@@ -93,15 +90,18 @@ export default function InteriorSection() {
                   whileHover={{ y: -3 }}
                   whileTap={{ y: 0 }}
                   transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                  className="flex-1" 
                 >
                   <TabsTrigger
                     key={space.id}
                     value={space.id}
-                    onClick={() => setActiveTab(space.id)}
+                    //onClick={() => setActiveTab(space.id)}
                     className="
-                      min-w-[130px] w-full text-sm md:text-base text-center py-2 rounded-lg border border-transparent
-                      data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:border-primary transition
+                      min-w-[120px] w-full text-sm md:text-base text-center py-2.5 rounded-lg border border-transparent
+                      data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:border-primary 
+                      transition-colors duration-150
                       whitespace-nowrap
+                      px-3
                     "
                   >
                     {space.title}
