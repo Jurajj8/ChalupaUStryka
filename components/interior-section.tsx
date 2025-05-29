@@ -14,7 +14,7 @@ export default function InteriorSection() {
     {
       id: "spalne",
       title: "Spálne",
-      description: "V chate sa nachádzajú tri spálne s 8 pevnými lôžkami, jednou prístelkou a cestovnou postieľkou.",
+      description: "V chate sa nachádzajú tri spálne s ôsmimi pevnými lôžkami, jednou prístelkou a cestovnou postieľkou.",
       images: [
         { src: "/ChalupaUStryka/images/interior/bedrooms/4.png", alt: "Spálňa 1" },
         { src: "/ChalupaUStryka/images/interior/bedrooms/1.png", alt: "Spálňa 2" },
@@ -26,7 +26,7 @@ export default function InteriorSection() {
       id: "spolocenska",
       title: "Spoločenská miestnosť",
       description:
-        "Spoločenská miestnosť s gaučom a televízorom so satelitným alebo internetovým príjmom a službou Skylink. Celá rodina či skupina priateľov sa môže zabaviť aj pri rôznych spoločenských hrách, alebo pri stolnom futbale.",
+        "Spoločenská miestnosť je vybavená gaučom a televízorom so satelitným alebo internetovým príjmom prostredníctvom služby Skylink. Celá rodina či skupina priateľov sa môže zabaviť aj pri rôznych spoločenských hrách, alebo pri stolnom futbale.",
       images: [
         { src: "/ChalupaUStryka/images/interior/common/1.png", alt: "Spoločenská miestnosť 1" },
         { src: "/ChalupaUStryka/images/interior/common/2.png", alt: "Spoločenská miestnosť 2" },
@@ -38,7 +38,7 @@ export default function InteriorSection() {
       id: "kuchyna",
       title: "Kuchyňa",
       description:
-        "Súčasťou vybavenia sú aj praktické doplnky ako rýchlovarná kanvica, hriankovač, či kompletný kuchynský riad, ktoré zabezpečujú maximálne pohodlie počas pobytu.",
+        "Súčasťou vybavenia sú aj praktické doplnky ako sú rýchlovarná kanvica, hriankovač, či kompletný kuchynský riad, ktoré zabezpečujú maximálne pohodlie počas pobytu.",
       images: [
         { src: "/ChalupaUStryka/images/interior/kitchen/1.png", alt: "Kuchyňa 1" },
         { src: "/ChalupaUStryka/images/interior/kitchen/2.png", alt: "Jedálenský stôl" },
@@ -262,7 +262,7 @@ export default function InteriorSection() {
                       <>
                         <AnimatedElement animation="slideLeft" delay={0.2}>
                           <li className="flex items-center gap-2">
-                            <span>Kúpeľňa 1: Infra saunou pre dve osoby, sprchový kút, toaleta, dvojumývadlo</span>
+                            <span>Kúpeľňa 1: Infra sauna pre dve osoby, sprchový kút, toaleta, dvojumývadlo</span>
                           </li>
                         </AnimatedElement>
                         <AnimatedElement animation="slideLeft" delay={0.3}>

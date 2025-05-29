@@ -280,6 +280,22 @@ export default function ExteriorSection() {
                           <path d="M9 20h6l-1-6h-4z" />
                         </motion.svg>
                       )}
+                      {item.icon === "music" && (
+                        <motion.svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                          strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"
+                          whileHover={{ rotate: 10, scale: 1.2 }}>
+                          <path d="M9 18V5l12-2v13" />
+                          <circle cx="6" cy="18" r="3" />
+                          <circle cx="18" cy="16" r="3" />
+                        </motion.svg>
+                      )}
+                      {item.icon === "fire" && (
+                        <motion.svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                          strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"
+                          whileHover={{ rotate: 10, scale: 1.2 }}>
+                          <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+                        </motion.svg>
+                      )}
                     </div>
                     <div>
                       <h5 className="font-medium text-lg">{item.title}</h5>
