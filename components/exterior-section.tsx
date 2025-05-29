@@ -323,7 +323,7 @@ export default function ExteriorSection() {
                   },
                   {
                     title: "Športové vybavenie",
-                    description: "Stolný tenis, badminton, volejbal, petang a ďalšie športové potreby",
+                    description: "Stolný tenis, badminton, volejbal, el. šípky, petang a ďalšie športové potreby",
                     icon: "tennis",
                   },
                   {
@@ -332,9 +332,9 @@ export default function ExteriorSection() {
                     icon: "kids",
                   },
                   {
-                    title: "Elektronické šípky",
-                    description: "Elektronické terče na šípky – ideálne na zábavné večery s priateľmi",
-                    icon: "target",
+                    title: "Sušič na lyžiarky",
+                    description: "Praktický sušič na lyžiarky pre pohodlné a rýchle vysušenie obuvi po lyžovačke v suteréne.",
+                    icon: "boots-dryer",
                   },
                 ].map((item, index) => (
                   <motion.div
@@ -382,14 +382,23 @@ export default function ExteriorSection() {
                           <path d="M5 22v-2a7 7 0 0 1 14 0v2" />
                         </motion.svg>
                       )}
-                      {item.icon === "target" && (
-                        // šípky
-                        <motion.svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-                          strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"
-                          whileHover={{ rotate: 10, scale: 1.2 }}>
-                          <circle cx="12" cy="12" r="10" />
-                          <circle cx="12" cy="12" r="6" />
-                          <circle cx="12" cy="12" r="2" />
+                      {item.icon === "boots-dryer" && (
+                        // sušič na lyžiarky
+                        <motion.svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="text-primary"
+                          whileHover={{ rotate: 10, scale: 1.2 }}
+                        >
+                          {/* Ikonka topánky so "vlnkami" (sušenie) */}
+                          <path d="M4 17V7a2 2 0 0 1 2-2h8l6 7v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" />
+                          <path d="M9 22s.5-2 3-2 3 2 3 2" /> {/* "Parné" vlnky na sušenie */}
                         </motion.svg>
                       )}
                       {item.icon === "fire" && (
