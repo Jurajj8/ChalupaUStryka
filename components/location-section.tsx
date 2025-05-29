@@ -62,12 +62,28 @@ export default function LocationSection() {
       image: "/ChalupaUStryka/images/attractions/vychylovka.jpg",
     },
     {
-      title: "Kysucká hvezdáreň v Kysuckom Novom Meste ",
+      title: "Kysucká hvezdáreň v Kysuckom Novom Meste",
       description: "Pre návštevníkov ponúka sprostredkovanie najnovších objavov a poznatkov prostredníctvom prednášok, výstav, astrotýždňa s možnosťou priamej účasti sa na pozorovaní vesmírnych úkazov a objektov.",
       distance: "23 km",
       duration: "27 min",
       seasonality: "Celoročne",
       image: "/ChalupaUStryka/images/attractions/hvezdaren.jpg",
+    },
+    {
+      title: "Lanový Park Dino Adventure",
+      description: "Obrie modely pravekých dinosaurov spolu s rôznorodými detskými lezeckými prekážkami. Na náučnom chodníku sa Vaši najmenší dozvedia zaujímavé informácie o vystavených dinosauroch.",
+      distance: "24 km",
+      duration: "26 min",
+      seasonality: "Celoročne",
+      image: "/ChalupaUStryka/images/attractions/dino.jpg",
+    },
+    {
+      title: "Hoplandia Žilina",
+      description: "Jediné nafukovacie centrum na Slovensku tohto druhu.",
+      distance: "25 km",
+      duration: "28 min",
+      seasonality: "Celoročne",
+      image: "/ChalupaUStryka/images/attractions/hoplandia.jpg",
     },
   ]
 
