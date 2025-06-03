@@ -29,13 +29,13 @@ export default function LocationSection() {
       distance: "18 km",
       duration: "24 min",
       seasonality: "Celoročne",
-      image: "https://res.cloudinary.com/djreoxyzu/image/upload/v1748983935/velka-raca_dy4t2s.webp",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748983935/velka-raca_dy4t2s.webp",
     },
     {
       title: "Kysucká cyklomagistrála",
       description: "Cyklotrasa vedúca priamo cez obec, v zime možnosť bežkovania.",
       seasonality: "Celoročne",
-      image: "https://res.cloudinary.com/djreoxyzu/image/upload/v1748983932/cyklomagistrala_l1yamd.webp",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748983932/cyklomagistrala_l1yamd.webp",
     },
     {
       title: "Slovenský orloj v Starej Bystrici",
@@ -43,7 +43,7 @@ export default function LocationSection() {
       distance: "4 km",
       duration: "4 min",
       seasonality: "Celoročne",
-      image: "https://res.cloudinary.com/djreoxyzu/image/upload/v1748983933/orloj_ji4xtn.webp",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748983933/orloj_ji4xtn.webp",
     },
     {
       title: "Malá Fatra",
@@ -51,7 +51,7 @@ export default function LocationSection() {
       distance: "26 km",
       duration: "30 min",
       seasonality: "Celoročne (v zime lyžovanie)",
-      image: "https://res.cloudinary.com/djreoxyzu/image/upload/v1748983933/mala-fatra_atubc7.webp",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748983933/mala-fatra_atubc7.webp",
     },
     {
       title: "Vychylovka – múzeum Kysuckej dediny s lesnou železnicou",
@@ -59,7 +59,7 @@ export default function LocationSection() {
       distance: "17 km",
       duration: "19 min",
       seasonality: "Celoročne",
-      image: "https://res.cloudinary.com/djreoxyzu/image/upload/v1748983935/vychylovka_sc9dmb.webp",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748983935/vychylovka_sc9dmb.webp",
     },
     {
       title: "Kysucká hvezdáreň v Kysuckom Novom Meste",
@@ -67,7 +67,7 @@ export default function LocationSection() {
       distance: "23 km",
       duration: "27 min",
       seasonality: "Celoročne",
-      image: "https://res.cloudinary.com/djreoxyzu/image/upload/v1748983934/hvezdaren_uk89cq.webp",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748983934/hvezdaren_uk89cq.webp",
     },
     {
       title: "Lanový Park Dino Adventure",
@@ -75,7 +75,7 @@ export default function LocationSection() {
       distance: "24 km",
       duration: "26 min",
       seasonality: "Celoročne",
-      image: "https://res.cloudinary.com/djreoxyzu/image/upload/v1748983934/dino_nh8evm.webp",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748983934/dino_nh8evm.webp",
     },
     {
       title: "Hoplandia Žilina",
@@ -83,7 +83,7 @@ export default function LocationSection() {
       distance: "25 km",
       duration: "28 min",
       seasonality: "Celoročne",
-      image: "https://res.cloudinary.com/djreoxyzu/image/upload/v1748983938/hoplandia_rc7iha.webp",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748983938/hoplandia_rc7iha.webp",
     },
   ]
 
