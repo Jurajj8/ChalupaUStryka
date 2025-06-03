@@ -29,7 +29,7 @@ export default function FeaturesSection() {
     },
     {
       title: "Detské ihrisko",
-      description: "Futbalové bránky, basketbalový kôš, drevený domček so šmýkačkou a pieskoviskom.",
+      description: "Futbalové bránky, basketbalový kôš, hojdačky, lezecká stena, trampolína, drevený domček so šmýkačkou a pieskoviskom.",
       icon: "baby",
     },
     {

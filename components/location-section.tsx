@@ -675,7 +675,7 @@ export default function LocationSection() {
                   className="flex items-start gap-2 text-sm"
                 >
                   <div className="h-2 w-2 rounded-full bg-primary mt-2" />
-                  <span>Autobusom: Zastávka v obci Klubina, 500 m od chalupy</span>
+                  <span>Autobusom: Zastávka v obci Klubina, 100 m od chalupy</span>
                 </motion.li>
                 <motion.li
                   initial={{ opacity: 0, x: -10 }}
@@ -700,7 +700,7 @@ export default function LocationSection() {
                   className="flex items-start gap-2 text-sm"
                 >
                   <div className="h-2 w-2 rounded-full bg-primary mt-2" />
-                  <span>Potraviny: Obchod v obci (300 m), supermarkety v Čadci (15 km)</span>
+                  <span>Potraviny: Obchod v obci (250 m), Tesco v Krásne nad Kysucou (8 km), Kaufland v Čadci (15km) </span>
                 </motion.li>
                 <motion.li
                   initial={{ opacity: 0, x: -10 }}
@@ -710,7 +710,7 @@ export default function LocationSection() {
                   className="flex items-start gap-2 text-sm"
                 >
                   <div className="h-2 w-2 rounded-full bg-primary mt-2" />
-                  <span>Reštaurácie: Miestna reštaurácia (500 m), koliba s tradičnými jedlami (2 km)</span>
+                  <span>Reštaurácie: Stará Bystrica (4 km), Zborov nad Bystricou (4 km)</span>
                 </motion.li>
                 <motion.li
                   initial={{ opacity: 0, x: -10 }}
@@ -720,7 +720,7 @@ export default function LocationSection() {
                   className="flex items-start gap-2 text-sm"
                 >
                   <div className="h-2 w-2 rounded-full bg-primary mt-2" />
-                  <span>Zdravotná starostlivosť: Ambulancia v obci, nemocnica v Čadci (15 km)</span>
+                  <span>Zdravotná starostlivosť: Nemocnica v Čadci (15 km)</span>
                 </motion.li>
               </ul>
             </div>

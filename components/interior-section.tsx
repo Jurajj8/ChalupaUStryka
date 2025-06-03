@@ -57,6 +57,15 @@ export default function InteriorSection() {
         { src: "/ChalupaUStryka/images/interior/bathroom/3.png", alt: "Sauna" },
       ],
     },
+    {
+      id: "suteren",
+      title: "Suterén",
+      description:
+        "Suterén je vybavený sušičom na lyžiarky, stojanom na lyže, stolným tenisom, elektronickými šípkami. ",
+      images: [
+        { src: "/ChalupaUStryka/images/interior/suteren/1.png", alt: "Suterén" },
+      ],
+    },
   ]
 
   const [activeTab, setActiveTab] = useState("spalne")

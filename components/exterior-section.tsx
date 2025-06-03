@@ -26,23 +26,22 @@ export default function ExteriorSection() {
     },
     {
       title: "Detské ihrisko",
-      description: "Futbalové bránky, basketbalový kôš, drevený domček so šmýkačkou a pieskoviskom.",
+      description: "Futbalové bránky, basketbalový kôš, hojdačky, lezecká stena, trampolína, drevený domček so šmýkačkou a pieskoviskom.",
       image: "/ChalupaUStryka/images/exterior/playground.png",
     },
     {
       title: "Bazén s lehátkami",
-      description: "Bazén pre celú rodinu alebo skupinu priateľov.",
-      image: "/ChalupaUStryka/images/exterior/sitting.png",
+      description: "K dispozícii je prekrytý bazén vyhrievaný tepelným čerpadlom, vhodný pre celú rodinu alebo skupinu priateľov. Súčasťou vybavenia je aj solárna sprcha, lehátka a slnečník na pohodlný relax.",
+      image: "/ChalupaUStryka/images/exterior/1.png",
     },
     {
       title: "Vodné atrakcie",
-      description: "Kúpacia kaďa a v lete bazén pre osvieženie počas horúcich dní.",
+      description: "Kaďa s hydromasážnymi tryskami, ktorú vyhrieva piecka na drevo. V letných mesiacoch môžete využiť na príjemné osvieženie počas horúcich dní.",
       image: "/ChalupaUStryka/images/exterior/kada.JPG",
     },
   ]
 
   const allExteriorImages = [
-    { src: "/ChalupaUStryka/images/exterior/1.png", alt: "Bazén s posedením" },
     { src: "/ChalupaUStryka/images/exterior/2.png", alt: "Kúpacia kaďa" },
     { src: "/ChalupaUStryka/images/exterior/3.png", alt: "Kúpacia kaďa v zime" },
     { src: "/ChalupaUStryka/images/exterior/4.png", alt: "Visiacie posedenie" },
@@ -50,7 +49,6 @@ export default function ExteriorSection() {
     { src: "/ChalupaUStryka/images/exterior/6.png", alt: "Gril" },
     { src: "/ChalupaUStryka/images/exterior/7.png", alt: "Basketbalový kôš" },
     { src: "/ChalupaUStryka/images/exterior/8.png", alt: "Šípky" },
-    { src: "/ChalupaUStryka/images/exterior/9.png", alt: "Stolný tenis" },
     { src: "/ChalupaUStryka/images/exterior/10.png", alt: "Zimné posedenie" },
     { src: "/ChalupaUStryka/images/exterior/11.png", alt: "Bazén" },
   ]
@@ -135,23 +133,23 @@ export default function ExteriorSection() {
               <div className="grid grid-cols-1 gap-4">
                 {[
                   {
-                    title: "Vonkajšia vírivka",
-                    description: "Celoročne vyhrievaná vírivka pre 4 osoby s hydromasážou a LED osvetlením",
+                    title: "Kúpacia kaďa",
+                    description: "Kaďa pre 6 osôb, vyhrievaná externou pieckou na drevo, vybavená hydromasážou a LED osvetlením",
                     icon: "spa",
                   },
                   {
                     title: "Záhradné lehátka",
-                    description: "Pohodlné lehátka na slnenie s nastaviteľným sklonom a tienidlom",
+                    description: "Pohodlné lehátka na slnenie s nastaviteľným sklonom, tienidlom a slnečníkom",
                     icon: "sun",
                   },
                   {
                     title: "Večerné posedenie",
-                    description: "Krytá terasa s vonkajším krbom, LED osvetlením a bluetooth reproduktormi",
+                    description: "Krytá terasa s LED osvetlením, príjemným posedním a závesnými kreslami",
                     icon: "music",
                   },
                   {
                     title: "Kotlík a ohnisko",
-                    description: "Kotlík na guláš, otvorené ohnisko a posedenie pri táboráku",
+                    description: "Kotlík na guláš, gril na drevené uhlie a otvorené ohnisko s lavičkami",
                     icon: "fire",
                   },
                 ].map((item, index) => (
@@ -323,17 +321,17 @@ export default function ExteriorSection() {
                   },
                   {
                     title: "Športové vybavenie",
-                    description: "Stolný tenis, badminton, volejbal, el. šípky, petang a ďalšie športové potreby",
+                    description: "Stolný tenis, stolný futbal, futbalové bránky, el. šípky, basketbalový kôs a ďalšie športové potreby",
                     icon: "tennis",
                   },
                   {
                     title: "Trampolína a preliezky",
-                    description: "Detská trampolína, šmýkačka, preliezky a domček pre najmenších",
+                    description: "Detská trampolína, hojdačky, lezecká stena a domček s pieskoviskom a šmýkačkou pre najmenších",
                     icon: "kids",
                   },
                   {
                     title: "Sušič na lyžiarky",
-                    description: "Praktický sušič na lyžiarky pre pohodlné a rýchle vysušenie obuvi po lyžovačke v suteréne.",
+                    description: "Praktický sušič na lyžiarky pre pohodlné a rýchle vysušenie obuvi po lyžovačke v suteréne so stojanom na lyže",
                     icon: "boots-dryer",
                   },
                 ].map((item, index) => (
@@ -450,10 +448,9 @@ export default function ExteriorSection() {
               {[
                 "Oplotená záhrada s bránou",
                 "Parkovanie pre 3 autá",
-                "Záhradný nábytok z masívu",
-                "Vonkajšie osvetlenie s pohybovým senzorom",
-                "Automatický zavlažovací systém",
+                "Vonkajšie osvetlenie",
                 "Úložný priestor na športové vybavenie",
+                "Miestnosť na uskladnenie bicyklov",
               ].map((item, index) => (
                 <motion.div
                   key={index}
