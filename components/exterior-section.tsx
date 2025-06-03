@@ -22,35 +22,35 @@ export default function ExteriorSection() {
     {
       title: "Opláštená terasa",
       description: "Priamo z kuchyne je opláštená terasa s posedením a dvomi závesnými kreslami.",
-      image: "/ChalupaUStryka/images/exterior/terrace.png",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988768/terrace_gm6qcr.png",
     },
     {
       title: "Detské ihrisko",
       description: "Futbalové bránky, basketbalový kôš, hojdačky, lezecká stena, trampolína, drevený domček so šmýkačkou a pieskoviskom.",
-      image: "/ChalupaUStryka/images/exterior/playground.png",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988766/playground_acnpkr.png",
     },
     {
       title: "Bazén s lehátkami",
       description: "K dispozícii je prekrytý bazén vyhrievaný tepelným čerpadlom, vhodný pre celú rodinu alebo skupinu priateľov. Súčasťou vybavenia je aj solárna sprcha, lehátka a slnečník na pohodlný relax.",
-      image: "/ChalupaUStryka/images/exterior/1.png",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988779/11_lg9dil.png",
     },
     {
       title: "Vodné atrakcie",
       description: "Kaďa s hydromasážnymi tryskami, ktorú vyhrieva piecka na drevo. V letných mesiacoch môžete využiť na príjemné osvieženie počas horúcich dní.",
-      image: "/ChalupaUStryka/images/exterior/kada.JPG",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988776/kada_csfcrr.jpg",
     },
   ]
 
   const allExteriorImages = [
-    { src: "/ChalupaUStryka/images/exterior/2.png", alt: "Kúpacia kaďa" },
-    { src: "/ChalupaUStryka/images/exterior/3.png", alt: "Kúpacia kaďa v zime" },
-    { src: "/ChalupaUStryka/images/exterior/4.png", alt: "Visiacie posedenie" },
-    { src: "/ChalupaUStryka/images/exterior/5.png", alt: "Výrivka" },
-    { src: "/ChalupaUStryka/images/exterior/6.png", alt: "Gril" },
-    { src: "/ChalupaUStryka/images/exterior/7.png", alt: "Basketbalový kôš" },
-    { src: "/ChalupaUStryka/images/exterior/8.png", alt: "Šípky" },
-    { src: "/ChalupaUStryka/images/exterior/10.png", alt: "Zimné posedenie" },
-    { src: "/ChalupaUStryka/images/exterior/11.png", alt: "Bazén" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988774/2_mnncph.png", alt: "Kúpacia kaďa" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988769/3_eqtldz.png", alt: "Kúpacia kaďa v zime" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988773/4_gfwj0q.png", alt: "Visiacie posedenie" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988770/5_afsnkl.png", alt: "Výrivka" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988774/6_rb48ip.png", alt: "Gril" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988775/7_czmkgh.png", alt: "Basketbalový kôš" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988777/8_vsmxph.png", alt: "Šípky" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748989053/10_zccajg.png", alt: "Zimné posedenie" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988768/1_z4pedn.png", alt: "Bazén" },
   ]
 
   return (
