@@ -12,7 +12,10 @@ try {
 const nextConfig = {
   reactStrictMode: true,
   basePath: '/ChalupaUStryka',
-  assetPrefix: '/ChalupaUStryka'
+  assetPrefix: '/ChalupaUStryka',
+  images: {
+    domains: ['res.cloudinary.com'],
+  }
 };
 
 if (userConfig) {
