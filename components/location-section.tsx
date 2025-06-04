@@ -142,7 +142,7 @@ export default function LocationSection() {
   // }
 
   return (
-    <AnimatedSection id="location" className="py-20 bg-gray-50" animation="fadeIn">
+      <AnimatedSection id="location" className="py-20 bg-gray-50" animation="fadeIn">More actions
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <AnimatedText as="h2" animation="slideUp" className="text-3xl md:text-4xl font-bold mb-4">
@@ -332,109 +332,109 @@ export default function LocationSection() {
 
 
            {isDesktop ? (
-      // DESKTOP – s animáciou
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        className="mb-12"
-      >
-        <AnimatedText as="h3" animation="slideUp" delay={0.3} className="text-2xl font-semibold mb-6 text-center">
-          Turistické atrakcie v okolí
-        </AnimatedText>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {attractions.map((attraction, index) => (
-            <Card key={index} className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full">
-              <motion.div
-                className="relative h-48"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300, damping: 10 }}
-              >
-                <Image
-                  src={imgError[attraction.image] ? "/placeholder.svg?height=400&width=600" : attraction.image}
-                  alt={attraction.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                  className="object-cover"
-                  onError={() => handleImageError(attraction.image)}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-2 left-2 right-2 flex justify-between items-center">
-                  <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
-                    <Car size={14} />
-                    <span>{attraction.distance}</span>
-                  </div>
-                  <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
-                    <Clock size={14} />
-                    <span>{attraction.duration}</span>
-                  </div>
-                </div>
-              </motion.div>
-              <CardContent className="p-4">
-                <motion.h4
-                  className="font-semibold text-lg mb-1"
-                  whileHover={{ x: 5 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  {attraction.title}
-                </motion.h4>
-                <p className="text-sm text-muted-foreground mb-2">{attraction.description}</p>
-                <motion.div className="flex items-center text-sm text-primary" whileHover={{ scale: 1.05 }}>
-                  <motion.div whileHover={{ rotate: 10 }} className="mr-1">
-                    <Calendar size={16} />
-                  </motion.div>
-                  <span>{attraction.seasonality}</span>
-                </motion.div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </motion.div>
-    ) : (
-      // MOBILE – bez animácie
-      <div className="mb-12">
-        <AnimatedText as="h3" className="text-2xl font-semibold mb-6 text-center">
-          Turistické atrakcie v okolí
-        </AnimatedText>
-        <div className="grid grid-cols-1 gap-6">
-          {attractions.map((attraction, index) => (
-            <Card key={index} className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full">
-              <div className="relative h-48">
-                <Image
-                  src={imgError[attraction.image] ? "/placeholder.svg?height=400&width=600" : attraction.image}
-                  alt={attraction.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw"
-                  className="object-cover"
-                  onError={() => handleImageError(attraction.image)}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <div className="absolute bottom-2 left-2 right-2 flex justify-between items-center">
-                  <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
-                    <Car size={14} />
-                    <span>{attraction.distance}</span>
-                  </div>
-                  <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
-                    <Clock size={14} />
-                    <span>{attraction.duration}</span>
-                  </div>
-                </div>
+            // DESKTOP – s animáciou
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              className="mb-12"
+            >
+              <AnimatedText as="h3" animation="slideUp" delay={0.3} className="text-2xl font-semibold mb-6 text-center">
+                Turistické atrakcie v okolí
+              </AnimatedText>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {attractions.map((attraction, index) => (
+                  <Card key={index} className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full">
+                    <motion.div
+                      className="relative h-48"
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ type: "spring", stiffness: 300, damping: 10 }}
+                    >
+                      <Image
+                        src={imgError[attraction.image] ? "/placeholder.svg?height=400&width=600" : attraction.image}
+                        alt={attraction.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        className="object-cover"
+                        onError={() => handleImageError(attraction.image)}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                      <div className="absolute bottom-2 left-2 right-2 flex justify-between items-center">
+                        <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
+                          <Car size={14} />
+                          <span>{attraction.distance}</span>
+                        </div>
+                        <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
+                          <Clock size={14} />
+                          <span>{attraction.duration}</span>
+                        </div>
+                      </div>
+                    </motion.div>
+                    <CardContent className="p-4">
+                      <motion.h4
+                        className="font-semibold text-lg mb-1"
+                        whileHover={{ x: 5 }}
+                        transition={{ type: "spring", stiffness: 300 }}
+                      >
+                        {attraction.title}
+                      </motion.h4>
+                      <p className="text-sm text-muted-foreground mb-2">{attraction.description}</p>
+                      <motion.div className="flex items-center text-sm text-primary" whileHover={{ scale: 1.05 }}>
+                        <motion.div whileHover={{ rotate: 10 }} className="mr-1">
+                          <Calendar size={16} />
+                        </motion.div>
+                        <span>{attraction.seasonality}</span>
+                      </motion.div>
+                    </CardContent>
+                  </Card>
+                ))}
               </div>
-              <CardContent className="p-4">
-                <h4 className="font-semibold text-lg mb-1">{attraction.title}</h4>
-                <p className="text-sm text-muted-foreground mb-2">{attraction.description}</p>
-                <div className="flex items-center text-sm text-primary">
-                  <div className="mr-1">
-                    <Calendar size={16} />
-                  </div>
-                  <span>{attraction.seasonality}</span>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-    )}
+            </motion.div>
+          ) : (
+            // MOBILE – bez animácie
+            <div className="mb-12">
+              <AnimatedText as="h3" className="text-2xl font-semibold mb-6 text-center">
+                Turistické atrakcie v okolí
+              </AnimatedText>
+              <div className="grid grid-cols-1 gap-6">
+                {attractions.map((attraction, index) => (
+                  <Card key={index} className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full">
+                    <div className="relative h-48">
+                      <Image
+                        src={imgError[attraction.image] ? "/placeholder.svg?height=400&width=600" : attraction.image}
+                        alt={attraction.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw"
+                        className="object-cover"
+                        onError={() => handleImageError(attraction.image)}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                      <div className="absolute bottom-2 left-2 right-2 flex justify-between items-center">
+                        <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
+                          <Car size={14} />
+                          <span>{attraction.distance}</span>
+                        </div>
+                        <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
+                          <Clock size={14} />
+                          <span>{attraction.duration}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <CardContent className="p-4">
+                      <h4 className="font-semibold text-lg mb-1">{attraction.title}</h4>
+                      <p className="text-sm text-muted-foreground mb-2">{attraction.description}</p>
+                      <div className="flex items-center text-sm text-primary">
+                        <div className="mr-1">
+                          <Calendar size={16} />
+                        </div>
+                        <span>{attraction.seasonality}</span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+            )}
 
         <AnimatedElement
           animation="slideUp"
