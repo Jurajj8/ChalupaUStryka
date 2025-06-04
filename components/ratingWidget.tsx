@@ -40,7 +40,7 @@ export default function RatingWidget() {
   }, [])
 
   return (
-    <div className="container mx-auto px-4 md:px-6 py-20">
+    <div id="rating" className="container mx-auto px-4 md:px-6 py-20">
       <div
         id="embed-W-fsDyoCqIqp1xS5Y4V0W"
         data-mu-embed-origin="https://www.megaubytovanie.sk"

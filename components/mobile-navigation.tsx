@@ -17,9 +17,11 @@ export default function MobileNavigation() {
     { id: "exterior", label: "Exteriér", href: "#exterior" },
     { id: "location", label: "Lokalita", href: "#location" },
     { id: "contact", label: "Kontakt", href: "#contact" },
+    { id: "reservation", label: "Rezervovať", href: "#reservation" },
+    { id: "rating", label: "Hodnotenie", href: "#rating" },
   ]
 
-  const activeSection = useActiveSection(["home", "features", "interior", "exterior", "location", "contact"], 200)
+  const activeSection = useActiveSection(["home", "features", "interior", "exterior", "location", "contact", "reservation", "rating"], 200)
 
   useEffect(() => {
     const handleScroll = () => {
