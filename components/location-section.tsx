@@ -335,12 +335,6 @@ export default function LocationSection() {
               </AnimatedText>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {attractions.map((attraction, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
-                  >
                     <Card className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full">
                       <motion.div
                         className="relative h-48"
@@ -384,7 +378,6 @@ export default function LocationSection() {
                         </motion.div>
                       </CardContent>
                     </Card>
-                  </motion.div>
                 ))}
               </div>
         </AnimatedElement>
