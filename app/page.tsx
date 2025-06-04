@@ -7,8 +7,8 @@ import ContactSection from "@/components/contact-section"
 import ParticlesBackground from "@/components/particles-background"
 import ScrollToTop from "@/components/scroll-to-top"
 import StatsSection from "@/components/stats-section"
-import ReservationForm from "@/components/reservation-form"
 import ReservationWidget from "@/components/reservationWidget"
+import RatingWidget from "@/components/ratingWidget"
 
 export default function Home() {
   return (
@@ -22,6 +22,7 @@ export default function Home() {
       <LocationSection />
       <ContactSection />
       <ReservationWidget />
+      <RatingWidget />
       <ScrollToTop />
     </main>
   )
