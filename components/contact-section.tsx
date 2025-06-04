@@ -5,6 +5,8 @@ import AnimatedSection from "./animated-section"
 import AnimatedElement from "./animated-element"
 import AnimatedText from "./animated-text"
 import ReservationForm from "./reservation-form"
+import { useEffect } from "react"
+
 
 export default function ContactSection() {
   return (
@@ -136,7 +138,9 @@ export default function ContactSection() {
           ))}
         </div>
 
-        <AnimatedElement animation="slideUp" delay={0.5} className="mt-16 bg-gray-50 rounded-xl p-8 md:p-10">
+        
+        
+        {/*<AnimatedElement animation="slideUp" delay={0.5} className="mt-16 bg-gray-50 rounded-xl p-8 md:p-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <AnimatedElement animation="slideLeft" delay={0.6} className="flex flex-col justify-center">
               <AnimatedText as="h3" animation="slideLeft" delay={0.6} className="text-2xl font-semibold mb-4">
@@ -192,7 +196,7 @@ export default function ContactSection() {
               </motion.div>
             </AnimatedElement>
           </div>
-        </AnimatedElement>
+        </AnimatedElement>*/}
       </div>
     </AnimatedSection>
   )
