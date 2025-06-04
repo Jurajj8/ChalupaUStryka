@@ -329,7 +329,7 @@ export default function LocationSection() {
         </div>
 
 
-        <AnimatedElement animation="slideUp" delay={0.4} className="mb-12">
+        <AnimatedElement animation="slideUp" delay={0.4} className="mb-12 opacity-100">
             <AnimatedText as="h3" animation="slideUp" delay={0.3} className="text-2xl font-semibold mb-6 text-center">
                 Turistické atrakcie v okolí
               </AnimatedText>
