@@ -329,305 +329,53 @@ export default function LocationSection() {
         </div>
 
 
-        <AnimatedElement animation="slideUp" delay={0.4} className="mb-12">
-          {/* <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full"> */}
-            {/* <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-8">
-              <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 400 }}>
-                <TabsTrigger value="attractions" className="text-sm md:text-base">
-                  Turistické atrakcie
-                </TabsTrigger>
-              </motion.div>
-              <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 400 }}>
-                <TabsTrigger value="cities" className="text-sm md:text-base">
-                  Mestá v okolí
-                </TabsTrigger>
-              </motion.div>
-              <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 400 }}>
-                <TabsTrigger value="seasonal" className="text-sm md:text-base">
-                  Sezónne aktivity
-                </TabsTrigger>
-              </motion.div>
-            </TabsList> */}
-
-            {/* <TabsContent value="attractions" forceMount> */}
-            <AnimatedText as="h3" animation="slideUp" delay={0.3} className="text-2xl font-semibold mb-6 text-center">
-                Turistické atrakcie v okolí
-              </AnimatedText>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {attractions.map((attraction, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                    whileHover={{ y: -10 }}
-                  >
-                    <Card className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full">
-                      <motion.div
-                        className="relative h-48"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ type: "spring", stiffness: 300, damping: 10 }}
-                      >
-                        <Image
-                          src={imgError[attraction.image] ? "/placeholder.svg?height=400&width=600" : attraction.image}
-                          alt={attraction.title}
-                          fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                          className="object-cover"
-                          onError={() => handleImageError(attraction.image)}
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <div className="absolute bottom-2 left-2 right-2 flex justify-between items-center">
-                          <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
-                            <Car size={14} />
-                            <span>{attraction.distance}</span>
-                          </div>
-                          <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
-                            <Clock size={14} />
-                            <span>{attraction.duration}</span>
-                          </div>
-                        </div>
-                      </motion.div>
-                      <CardContent className="p-4">
-                        <motion.h4
-                          className="font-semibold text-lg mb-1"
-                          whileHover={{ x: 5 }}
-                          transition={{ type: "spring", stiffness: 300 }}
-                        >
-                          {attraction.title}
-                        </motion.h4>
-                        <p className="text-sm text-muted-foreground mb-2">{attraction.description}</p>
-                        <motion.div className="flex items-center text-sm text-primary" whileHover={{ scale: 1.05 }}>
-                          <motion.div whileHover={{ rotate: 10 }} className="mr-1">
-                            <Calendar size={16} />
-                          </motion.div>
-                          <span>{attraction.seasonality}</span>
-                        </motion.div>
-                      </CardContent>
-                    </Card>
-                  </motion.div>
-                ))}
+        <AnimatedElement className="mb-12">
+          <AnimatedText as="h3" className="text-2xl font-semibold mb-6 text-center">
+            Turistické atrakcie v okolí
+          </AnimatedText>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {attractions.map((attraction, index) => (
+              <div key={index}>
+                <Card className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full">
+                  <div className="relative h-48">
+                    <Image
+                      src={imgError[attraction.image] ? "/placeholder.svg?height=400&width=600" : attraction.image}
+                      alt={attraction.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover"
+                      onError={() => handleImageError(attraction.image)}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    <div className="absolute bottom-2 left-2 right-2 flex justify-between items-center">
+                      <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
+                        <Car size={14} />
+                        <span>{attraction.distance}</span>
+                      </div>
+                      <div className="flex items-center gap-1 text-white text-sm bg-black/40 px-2 py-1 rounded-md backdrop-blur-sm">
+                        <Clock size={14} />
+                        <span>{attraction.duration}</span>
+                      </div>
+                    </div>
+                  </div>
+                  <CardContent className="p-4">
+                    <h4 className="font-semibold text-lg mb-1">
+                      {attraction.title}
+                    </h4>
+                    <p className="text-sm text-muted-foreground mb-2">{attraction.description}</p>
+                    <div className="flex items-center text-sm text-primary">
+                      <div className="mr-1">
+                        <Calendar size={16} />
+                      </div>
+                      <span>{attraction.seasonality}</span>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
-            {/* </TabsContent> */}
-
-            {/* <TabsContent value="cities">
-              <AnimatedText as="h3" animation="slideUp" delay={0.3} className="text-2xl font-semibold mb-6 text-center">
-                Mestá v okolí
-              </AnimatedText>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {cities.map((city, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                    whileHover={{ y: -5 }}
-                  >
-                    <Card className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full">
-                      <CardContent className="p-5">
-                        <div className="flex justify-between items-center mb-4">
-                          <motion.h4
-                            className="font-semibold text-xl"
-                            whileHover={{ x: 5 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                          >
-                            {city.name}
-                          </motion.h4>
-                          <div className="flex items-center gap-2">
-                            <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                              <Car size={14} className="text-primary" />
-                              <span>{city.distance}</span>
-                            </div>
-                            <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                              <Clock size={14} className="text-primary" />
-                              <span>{city.duration}</span>
-                            </div>
-                          </div>
-                        </div>
-                        <p className="text-sm text-muted-foreground mb-4">{city.description}</p>
-                        <div className="bg-gray-50 p-3 rounded-lg">
-                          <h5 className="text-sm font-medium mb-2 text-primary">Vybavenosť a atrakcie:</h5>
-                          <div className="flex flex-wrap gap-2">
-                            {city.amenities.map((amenity, i) => (
-                              <motion.span
-                                key={i}
-                                whileHover={{ scale: 1.05 }}
-                                className="text-xs bg-white px-2 py-1 rounded-md border border-gray-200"
-                              >
-                                {amenity}
-                              </motion.span>
-                            ))}
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </motion.div>
-                ))}
-              </div>
-            </TabsContent> */}
-
-            {/* <TabsContent value="seasonal">
-              <AnimatedText as="h3" animation="slideUp" delay={0.3} className="text-2xl font-semibold mb-6 text-center">
-                Aktivity podľa sezóny
-              </AnimatedText>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {[
-                  {
-                    season: "Jar",
-                    activities: seasonalActivities.spring,
-                    color: "from-green-50 to-green-100",
-                    icon: "spring",
-                  },
-                  {
-                    season: "Leto",
-                    activities: seasonalActivities.summer,
-                    color: "from-yellow-50 to-yellow-100",
-                    icon: "summer",
-                  },
-                  {
-                    season: "Jeseň",
-                    activities: seasonalActivities.autumn,
-                    color: "from-orange-50 to-orange-100",
-                    icon: "autumn",
-                  },
-                  {
-                    season: "Zima",
-                    activities: seasonalActivities.winter,
-                    color: "from-blue-50 to-blue-100",
-                    icon: "winter",
-                  },
-                ].map((item, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                    whileHover={{ y: -5 }}
-                  >
-                    <Card
-                      className={`overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full bg-gradient-to-br ${item.color}`}
-                    >
-                      <CardContent className="p-5">
-                        <div className="flex items-center gap-3 mb-4">
-                          {item.icon === "spring" && (
-                            <motion.svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              className="text-green-600"
-                              whileHover={{ rotate: 10, scale: 1.2 }}
-                            >
-                              <path d="M12 2v8" />
-                              <path d="M4.93 10.93 8 14" />
-                              <path d="M2 18h12" />
-                              <path d="M20 18h2" />
-                              <path d="M20 18v-8" />
-                              <path d="M16 12.93 19.07 10" />
-                            </motion.svg>
-                          )}
-                          {item.icon === "summer" && (
-                            <motion.svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              className="text-yellow-600"
-                              whileHover={{ rotate: 45, scale: 1.2 }}
-                            >
-                              <circle cx="12" cy="12" r="4" />
-                              <path d="M12 2v2" />
-                              <path d="M12 20v2" />
-                              <path d="m4.93 4.93 1.41 1.41" />
-                              <path d="m17.66 17.66 1.41 1.41" />
-                              <path d="M2 12h2" />
-                              <path d="M20 12h2" />
-                              <path d="m6.34 17.66-1.41 1.41" />
-                              <path d="m19.07 4.93-1.41 1.41" />
-                            </motion.svg>
-                          )}
-                          {item.icon === "autumn" && (
-                            <motion.svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              className="text-orange-600"
-                              whileHover={{ rotate: 10, scale: 1.2 }}
-                            >
-                              <path d="M2 22 12 2l10 20-10-5-10 5Z" />
-                              <path d="M12 17V2" />
-                            </motion.svg>
-                          )}
-                          {item.icon === "winter" && (
-                            <motion.svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              className="text-blue-600"
-                              whileHover={{ rotate: 45, scale: 1.2 }}
-                            >
-                              <path d="M2 12h20" />
-                              <path d="M12 2v20" />
-                              <path d="m4.93 4.93 14.14 14.14" />
-                              <path d="m19.07 4.93-14.14 14.14" />
-                            </motion.svg>
-                          )}
-                          <motion.h4
-                            className="font-semibold text-lg"
-                            whileHover={{ x: 5 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                          >
-                            {item.season}
-                          </motion.h4>
-                        </div>
-                        <ul className="space-y-2">
-                          {item.activities.map((activity, i) => (
-                            <motion.li
-                              key={i}
-                              initial={{ opacity: 0, x: -10 }}
-                              whileInView={{ opacity: 1, x: 0 }}
-                              viewport={{ once: true }}
-                              transition={{ duration: 0.3, delay: 0.6 + i * 0.1 }}
-                              className="flex items-start gap-2"
-                            >
-                              <div className="h-2 w-2 rounded-full bg-primary mt-2" />
-                              <span className="text-sm">{activity}</span>
-                            </motion.li>
-                          ))}
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </motion.div>
-                ))}
-              </div>
-            </TabsContent> */}
-          {/* </Tabs> */}
+            ))}
+          </div>
         </AnimatedElement>
+
 
         <AnimatedElement
           animation="slideUp"
