@@ -142,7 +142,7 @@ export default function LocationSection() {
   // }
 
   return (
-      <AnimatedSection id="location" className="py-20 bg-gray-50" animation="fadeIn">More actions
+      <AnimatedSection id="location" className="py-20 bg-gray-50" animation="fadeIn">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <AnimatedText as="h2" animation="slideUp" className="text-3xl md:text-4xl font-bold mb-4">
