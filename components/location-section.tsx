@@ -357,8 +357,9 @@ export default function LocationSection() {
                 {attractions.map((attraction, index) => (
                   <motion.div
                     key={index}
-                    initial={false}
-                    animate={{ opacity: 1, y: 0 }}
+                    initial={{ opacity: 1, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
                     whileHover={{ y: -10 }}
                   >
