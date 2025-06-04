@@ -330,26 +330,6 @@ export default function LocationSection() {
 
 
         <AnimatedElement animation="slideUp" delay={0.4} className="mb-12">
-          {/* <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full"> */}
-            {/* <TabsList className="grid w-full grid-cols-1 md:grid-cols-3 mb-8">
-              <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 400 }}>
-                <TabsTrigger value="attractions" className="text-sm md:text-base">
-                  Turistické atrakcie
-                </TabsTrigger>
-              </motion.div>
-              <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 400 }}>
-                <TabsTrigger value="cities" className="text-sm md:text-base">
-                  Mestá v okolí
-                </TabsTrigger>
-              </motion.div>
-              <motion.div whileHover={{ y: -2 }} transition={{ type: "spring", stiffness: 400 }}>
-                <TabsTrigger value="seasonal" className="text-sm md:text-base">
-                  Sezónne aktivity
-                </TabsTrigger>
-              </motion.div>
-            </TabsList> */}
-
-            {/* <TabsContent value="attractions" forceMount> */}
             <AnimatedText as="h3" animation="slideUp" delay={0.3} className="text-2xl font-semibold mb-6 text-center">
                 Turistické atrakcie v okolí
               </AnimatedText>
@@ -357,10 +337,9 @@ export default function LocationSection() {
                 {attractions.map((attraction, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                    whileHover={{ y: -10 }}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
                   >
                     <Card className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full">
                       <motion.div
