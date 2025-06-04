@@ -329,7 +329,7 @@ export default function LocationSection() {
         </div>
 
 
-        <AnimatedElement className="mb-12">
+        <div className="mb-12">
           <AnimatedText as="h3" className="text-2xl font-semibold mb-6 text-center">
             Turistické atrakcie v okolí
           </AnimatedText>
@@ -374,7 +374,7 @@ export default function LocationSection() {
               </div>
             ))}
           </div>
-        </AnimatedElement>
+        </div>
 
 
         <AnimatedElement
