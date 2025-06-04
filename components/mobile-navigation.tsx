@@ -11,7 +11,7 @@ export default function MobileNavigation() {
   const [isScrolled, setIsScrolled] = useState(false)
 
   const sections = [
-    { id: "home", label: "Domov", href: "#" },
+    { id: "home", label: "Domov", href: "#home" },
     { id: "features", label: "Vybavenie", href: "#features" },
     { id: "interior", label: "Interiér", href: "#interior" },
     { id: "exterior", label: "Exteriér", href: "#exterior" },
