@@ -60,6 +60,7 @@ export default function ImageGallery({ images, className = "" }: ImageGalleryPro
               src={imgError[image.src] ? "/placeholder.svg?height=600&width=800" : image.src}
               alt={image.alt}
               fill
+              loading="lazy"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover transition-transform duration-300"
               onError={() => handleImageError(image.src)}
@@ -124,7 +125,7 @@ export default function ImageGallery({ images, className = "" }: ImageGalleryPro
                     }
                     alt={images[currentImageIndex].alt}
                     fill
-                    sizes="80vw"
+                    sizes="(max-width: 768px) 100vw, 80vw"
                     className="object-contain"
                     priority
                     onError={() => handleImageError(images[currentImageIndex].src)}

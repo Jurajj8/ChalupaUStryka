@@ -16,10 +16,10 @@ export default function InteriorSection() {
       title: "Spálne",
       description: "V chate sa nachádzajú tri spálne s ôsmimi pevnými lôžkami, jednou prístelkou a cestovnou postieľkou.",
       images: [
-        { src: "/ChalupaUStryka/images/interior/bedrooms/4.png", alt: "Spálňa 1" },
-        { src: "/ChalupaUStryka/images/interior/bedrooms/1.png", alt: "Spálňa 2" },
-        { src: "/ChalupaUStryka/images/interior/bedrooms/2.png", alt: "Spálňa 3" },
-        { src: "/ChalupaUStryka/images/interior/bedrooms/3.png", alt: "Detská postielka" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031329/4_dmjrdn.png", alt: "Spálňa 1" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031301/1_pc8pov.png", alt: "Spálňa 2" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031330/2_piw4zp.png", alt: "Spálňa 3" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031327/3_s8ae9w.png", alt: "Detská postielka" },
       ],
     },
     {
@@ -28,10 +28,10 @@ export default function InteriorSection() {
       description:
         "Spoločenská miestnosť je vybavená gaučom a televízorom so satelitným alebo internetovým príjmom prostredníctvom služby Skylink. Celá rodina či skupina priateľov sa môže zabaviť aj pri rôznych spoločenských hrách, alebo pri stolnom futbale.",
       images: [
-        { src: "/ChalupaUStryka/images/interior/common/1.png", alt: "Spoločenská miestnosť 1" },
-        { src: "/ChalupaUStryka/images/interior/common/2.png", alt: "Spoločenská miestnosť 2" },
-        { src: "/ChalupaUStryka/images/interior/common/3.png", alt: "Detský kútik" },
-        { src: "/ChalupaUStryka/images/interior/common/4.png", alt: "Kalčeto" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031333/1_bikx46.png", alt: "Spoločenská miestnosť 1" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031348/2_nikqzx.png", alt: "Spoločenská miestnosť 2" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031356/3_bi16eo.png", alt: "Detský kútik" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031303/4_cwncpi.png", alt: "Kalčeto" },
       ],
     },
     {
@@ -40,9 +40,9 @@ export default function InteriorSection() {
       description:
         "Súčasťou vybavenia sú aj praktické doplnky ako sú rýchlovarná kanvica, hriankovač, či kompletný kuchynský riad, ktoré zabezpečujú maximálne pohodlie počas pobytu.",
       images: [
-        { src: "/ChalupaUStryka/images/interior/kitchen/1.png", alt: "Kuchyňa 1" },
-        { src: "/ChalupaUStryka/images/interior/kitchen/2.png", alt: "Jedálenský stôl" },
-        { src: "/ChalupaUStryka/images/interior/kitchen/3.png", alt: "Kuchynské spotrebiče" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031319/1_sciuzp.png", alt: "Kuchyňa 1" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031337/2_tmfl9o.png", alt: "Jedálenský stôl" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031351/3_ssjwer.png", alt: "Kuchynské spotrebiče" },
 
       ],
     },
@@ -52,9 +52,9 @@ export default function InteriorSection() {
       description:
         "K dispozícii sú dve moderne vybavené kúpeľne s toaletou a sprchovacím kútom. Jedna z nich je navyše vybavená infrasaunou pre dve osoby, ideálnou na relax po aktívnom dni. Ubytovanie zahŕňa aj všetko potrebné pre váš komfort – od posteľnej bielizne až po uteráky a saunové plachty.",
       images: [
-        { src: "/ChalupaUStryka/images/interior/bathroom/1.png", alt: "Kúpeľňa 1" },
-        { src: "/ChalupaUStryka/images/interior/bathroom/2.png", alt: "Kúpeľňa 2" },
-        { src: "/ChalupaUStryka/images/interior/bathroom/3.png", alt: "Sauna" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031191/1_mttqex.png", alt: "Kúpeľňa 1" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031191/2_ltb6g9.png", alt: "Kúpeľňa 2" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031191/3_jujuy1.png", alt: "Sauna" },
       ],
     },
     {
@@ -63,7 +63,7 @@ export default function InteriorSection() {
       description:
         "Suterén je vybavený sušičom na lyžiarky, stojanom na lyže, stolným tenisom, elektronickými šípkami. ",
       images: [
-        { src: "/ChalupaUStryka/images/interior/suteren/1.png", alt: "Suterén" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031298/1_c6u8hl.png", alt: "Suterén" },
       ],
     },
   ]
