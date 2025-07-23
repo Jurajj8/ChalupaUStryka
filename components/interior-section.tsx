@@ -43,6 +43,7 @@ export default function InteriorSection() {
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031319/1_sciuzp.png", alt: "Kuchyňa 1" },
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031337/2_tmfl9o.png", alt: "Jedálenský stôl" },
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031351/3_ssjwer.png", alt: "Kuchynské spotrebiče" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753288487/stolicka_thhsfz.jpg", alt: "Detská stolička" },
 
       ],
     },
@@ -64,6 +65,8 @@ export default function InteriorSection() {
         "Suterén je vybavený sušičom na lyžiarky, stojanom na lyže, stolným tenisom, elektronickými šípkami. ",
       images: [
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031298/1_c6u8hl.png", alt: "Suterén" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753288708/susiak_fpkfs1.jpg", alt: "Sušiak" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753288709/stojan_c52fz3.jpg", alt: "Stojan" },
       ],
     },
   ]

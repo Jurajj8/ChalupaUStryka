@@ -32,7 +32,7 @@ export default function ExteriorSection() {
     {
       title: "Bazén s lehátkami",
       description: "K dispozícii je prekrytý bazén vyhrievaný tepelným čerpadlom, vhodný pre celú rodinu alebo skupinu priateľov. Súčasťou vybavenia je aj solárna sprcha, lehátka a slnečník na pohodlný relax.",
-      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988779/11_lg9dil.png",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753286830/11_ylzdmo.jpg",
     },
     {
       title: "Vodné atrakcie",
