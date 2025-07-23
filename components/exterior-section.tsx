@@ -104,7 +104,7 @@ export default function ExteriorSection() {
             </AnimatedElement>
           ))}
         </div>
-        
+
         <div className="mt-12">
           <AnimatedText as="h3" animation="slideUp" className="text-2xl font-semibold mb-6 text-center">
             Fotogaléria exteriéru
@@ -317,8 +317,8 @@ export default function ExteriorSection() {
               <div className="grid grid-cols-1 gap-4">
                {[
                   {
-                    title: "Vonkajšia letná kuchyňa",
-                    description: "Plne vybavená letná kuchyňa s grilom, udiarňou a pizza pecou",
+                    title: "Vonkajšia príprava jedla",
+                    description: "Gril, kotlík na guláš a ohnisko",
                     icon: "utensils",
                   },
                   {
