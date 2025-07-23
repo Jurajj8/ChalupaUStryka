@@ -22,7 +22,7 @@ export default function ExteriorSection() {
     {
       title: "Opláštená terasa",
       description: "Priamo z kuchyne je opláštená terasa s posedením a dvomi závesnými kreslami.",
-      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988768/terrace_gm6qcr.png",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753290852/terrace_gm6qcr.jpg",
     },
     {
       title: "Detské ihrisko",
@@ -42,15 +42,17 @@ export default function ExteriorSection() {
   ]
 
   const allExteriorImages = [
-    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988774/2_mnncph.png", alt: "Kúpacia kaďa" },
-    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988769/3_eqtldz.png", alt: "Kúpacia kaďa v zime" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753290653/2_mnncph.jpg", alt: "Kúpacia kaďa" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753290964/exterier3_mad4pu.jpg", alt: "Hupacia sieť" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988773/4_gfwj0q.png", alt: "Visiacie posedenie" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988770/5_afsnkl.png", alt: "Výrivka" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988774/6_rb48ip.png", alt: "Gril" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988775/7_czmkgh.png", alt: "Basketbalový kôš" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988777/8_vsmxph.png", alt: "Šípky" },
-    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748989053/10_zccajg.png", alt: "Zimné posedenie" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988768/1_z4pedn.png", alt: "Bazén" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753290702/exterier1_srbzfy.jpg", alt: "Posedenie" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748989053/10_zccajg.png", alt: "Zimné posedenie" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988769/3_eqtldz.png", alt: "Kúpacia kaďa v zime" },
   ]
 
   return (
@@ -102,7 +104,7 @@ export default function ExteriorSection() {
             </AnimatedElement>
           ))}
         </div>
-
+        
         <div className="mt-12">
           <AnimatedText as="h3" animation="slideUp" className="text-2xl font-semibold mb-6 text-center">
             Fotogaléria exteriéru
