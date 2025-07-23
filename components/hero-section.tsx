@@ -183,12 +183,13 @@ export default function HeroSection() {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-dog"
+                className="lucide lucide-paw-print"
               >
-                <path d="M10 5H5a3 3 0 0 0-3 3v5h2l2 4h5" />
-                <path d="M16 5c-1 0-2 .5-2 2v1h4l2 2v2h-4" />
-                <circle cx="6" cy="10" r="1" />
-                <circle cx="17" cy="14" r="1" />
+                <circle cx="5" cy="8" r="2" />
+                <circle cx="19" cy="8" r="2" />
+                <circle cx="7" cy="17" r="2" />
+                <circle cx="17" cy="17" r="2" />
+                <path d="M12 14c2 0 4 1.5 4 3s-2 3-4 3-4-1.5-4-3 2-3 4-3z" />
               </svg>
               <span>Povolený malý psík</span>
             </motion.div>
