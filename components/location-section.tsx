@@ -159,7 +159,7 @@ export default function LocationSection() {
           >
             <div className="absolute inset-0 bg-black/5 z-10 pointer-events-none"></div>
             <Image
-              src={imgError["https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753392332/klubina_tkvhrk.jpg"] ? "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753392204/placeholder_afrpgi.svg" : "/ChalupaUStryka/images/klubina.jpg"}
+              src={imgError["https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753392332/klubina_tkvhrk.jpg"] ? "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753392204/placeholder_afrpgi.svg" : "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753392332/klubina_tkvhrk.jpg"}
               alt="Mapa lokality"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
