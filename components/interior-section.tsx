@@ -18,7 +18,7 @@ export default function InteriorSection() {
       images: [
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031329/4_dmjrdn.png", alt: "Spálňa 1" },
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753288927/spalna_xmdkea.jpg", alt: "Spálňa 1" },
-        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031301/1_pc8pov.png", alt: "Spálňa 2" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753387884/1_pc8pov.jpg", alt: "Spálňa 2" },
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031330/2_piw4zp.png", alt: "Spálňa 3" },
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031327/3_s8ae9w.png", alt: "Detská postielka" },
       ],

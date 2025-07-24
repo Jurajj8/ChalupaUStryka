@@ -48,7 +48,7 @@ export default function FeaturesSection() {
           </AnimatedElement>
           <AnimatedElement animation="slideUp" delay={0.2}>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Ponúkame vám komfortné ubytovanie v blízkosti cyklotrasy s množstvom vybavenia pre dokonalý oddych a zábavu pre celú rodinu.
+              Ponúkame vám ubytovanie v blízkosti cyklotrasy s množstvom vybavenia pre dokonalý oddych a zábavu pre celú rodinu.
             </p>
           </AnimatedElement>
         </div>
