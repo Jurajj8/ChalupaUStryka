@@ -1,8 +1,8 @@
 "use client"
 
-import { useState, useRef, useEffect } from "react"
+import { useState } from "react"
 import Image from "next/image"
-import { motion, useInView } from "framer-motion"
+import { motion } from "framer-motion"
 import ImageGallery from "./image-gallery"
 import AnimatedSection from "./animated-section"
 import AnimatedElement from "./animated-element"
@@ -10,8 +10,6 @@ import AnimatedText from "./animated-text"
 
 export default function ExteriorSection() {
   const [imgError, setImgError] = useState<Record<string, boolean>>({})
-  const galleryRef = useRef(null)
-  const galleryInView = useInView(galleryRef, { once: true, amount: 0.3 })
 
   const handleImageError = (src: string) => {
     setImgError((prev) => ({
@@ -58,7 +56,7 @@ export default function ExteriorSection() {
   ]
 
   return (
-    <section id="exterior" className="py-20 bg-white">
+    <AnimatedSection id="exterior" className="py-20 bg-white" animation="fadeIn">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <AnimatedText as="h2" animation="slideUp" className="text-3xl md:text-4xl font-bold mb-4">
@@ -107,15 +105,13 @@ export default function ExteriorSection() {
           ))}
         </div>
 
-         <div className="mt-12" ref={galleryRef}>
+        <div className="mt-12">
           <AnimatedText as="h3" animation="slideUp" className="text-2xl font-semibold mb-6 text-center">
             Fotogaléria exteriéru
           </AnimatedText>
-          {galleryInView && (
-            <AnimatedElement animation="scale" delay={0.2}>
-              <ImageGallery images={allExteriorImages} />
-            </AnimatedElement>
-          )}
+          <AnimatedElement animation="scale" delay={0.2}>
+            <ImageGallery images={allExteriorImages} />
+          </AnimatedElement>
         </div>
 
         <AnimatedElement
@@ -474,6 +470,6 @@ export default function ExteriorSection() {
           </motion.div>
         </AnimatedElement>
       </div>
-    </section>
+    </AnimatedSection>
   )
 }
