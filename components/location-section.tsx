@@ -63,7 +63,7 @@ export default function LocationSection() {
     },
     {
       title: "Klubinská dolina",
-      description: "Klubínska dolina je malebná dolina v Oravskej Magure, situovaná neďaleko obce Klubina pri Dolnom Kubíne. Dolina je známa pokojnou prírodou, potokom Klubinka a výhľadmi na okolitú oravskú krajinu. Vďaka čistému vzduchu a minimálnemu ruchu je ideálnym miestom na relax a oddych v prírode.",
+      description: "Dolina je známa pokojnou prírodou s krásnymi výhľadmi na okolitú kysuckú krajinu, cez ktorú preteká Klubinský potok. Vďaka čistému vzduchu a minimálnemu ruchu je ideálnym miestom na relax a oddych v prírode.",
       distance: "50 m",
       duration: "1 min",
       seasonality: "Celoročne",
@@ -468,7 +468,7 @@ export default function LocationSection() {
                   className="flex items-start gap-2 text-sm"
                 >
                   <div className="h-2 w-2 rounded-full bg-primary mt-2" />
-                  <span>Zdravotná starostlivosť: Nemocnica v Čadci (15 km)</span>
+                  <span>Zdravotná starostlivosť: Lekáreň v Starej Bystrici, Lekáreň v Zborove nad Bystricou, Nemocnica v Čadci (15 km)</span>
                 </motion.li>
               </ul>
             </div>
