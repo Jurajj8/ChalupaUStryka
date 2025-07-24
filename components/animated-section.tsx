@@ -54,7 +54,6 @@ export default function AnimatedSection({
   const inView = useInView(ref, { once, amount: 0 })
 
   useEffect(() => {
-    console.log(`[AnimatedSection] ${id} inView:`, inView)
     if (inView || once) {
       controls.start("visible")
     } else {
