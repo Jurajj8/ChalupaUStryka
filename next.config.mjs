@@ -10,9 +10,8 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
-  basePath: '/ChalupaUStryka',
-  assetPrefix: '/ChalupaUStryka',
   images: {
     domains: ['res.cloudinary.com'],
   }
