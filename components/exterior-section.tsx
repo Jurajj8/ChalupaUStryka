@@ -127,7 +127,7 @@ export default function ExteriorSection() {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.1  }}
               transition={{ duration: 0.5, delay: 0.5 }}
               className="bg-white rounded-xl p-6 shadow-md"
             >
@@ -309,7 +309,7 @@ export default function ExteriorSection() {
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.1  }}
               transition={{ duration: 0.5, delay: 0.5 }}
               className="bg-white rounded-xl p-6 shadow-md"
             >
@@ -423,7 +423,7 @@ export default function ExteriorSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1  }}
             transition={{ duration: 0.5, delay: 0.7 }}
             className="mt-8 bg-primary/10 rounded-lg p-5 border border-primary/20"
           >
@@ -458,7 +458,7 @@ export default function ExteriorSection() {
                   key={index}
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: true, amount: 0.1  }}
                   transition={{ duration: 0.3, delay: 0.8 + index * 0.1 }}
                   className="flex items-center gap-2 py-1"
                 >
