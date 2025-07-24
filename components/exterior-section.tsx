@@ -106,12 +106,10 @@ export default function ExteriorSection() {
         </div>
 
         <div className="mt-12">
-          <AnimatedText as="h3" animation="slideUp" className="text-2xl font-semibold mb-6 text-center">
+          <h3 className="text-2xl font-semibold mb-6 text-center">
             Fotogaléria exteriéru
-          </AnimatedText>
-          <AnimatedElement animation="scale" delay={0.2}>
-            <ImageGallery images={allExteriorImages} />
-          </AnimatedElement>
+          </h3>
+          <ImageGallery images={allExteriorImages} />
         </div>
 
         <AnimatedElement
