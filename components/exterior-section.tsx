@@ -53,7 +53,7 @@ export default function ExteriorSection() {
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753373808/8_vsmxph.jpg", alt: "Šípky" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748989053/10_zccajg.png", alt: "Zimné posedenie" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988769/3_eqtldz.png", alt: "Kúpacia kaďa v zime" },
-    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753388022/suhrn_ba6hkk.jpg", alt: "Súhrn" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753388022/suhrn_ba6hkk.jpg", alt: "Koláž" },
   ]
 
   return (
