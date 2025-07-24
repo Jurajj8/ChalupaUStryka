@@ -458,7 +458,7 @@ export default function LocationSection() {
                   className="flex items-start gap-2 text-sm"
                 >
                   <div className="h-2 w-2 rounded-full bg-primary mt-2" />
-                  <span>Reštaurácie: Stará Bystrica (4 km), Zborov nad Bystricou (4 km)</span>
+                  <span>Reštaurácie: Stará Bystrica (4 km), Zborov nad Bystricou (4 km), Reštaurácia Bobovec (10 km)</span>
                 </motion.li>
                 <motion.li
                   initial={{ opacity: 0, x: -10 }}

@@ -48,8 +48,8 @@ export default function ContactSection() {
             {
               title: "Email",
               description: "Napíšte nám a my vám odpovieme čo najskôr",
-              contact: "info@chalupaustryka.sk",
-              href: "mailto:info@chalupaustryka.sk",
+              contact: "chalupaustryka@gmail.com",
+              href: "mailto:chalupaustryka@gmail.com",
               icon: (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

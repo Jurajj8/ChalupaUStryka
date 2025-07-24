@@ -1,8 +1,8 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import Image from "next/image"
-import { motion } from "framer-motion"
+import { motion, useInView } from "framer-motion"
 import ImageGallery from "./image-gallery"
 import AnimatedSection from "./animated-section"
 import AnimatedElement from "./animated-element"
@@ -10,6 +10,8 @@ import AnimatedText from "./animated-text"
 
 export default function ExteriorSection() {
   const [imgError, setImgError] = useState<Record<string, boolean>>({})
+  const galleryRef = useRef(null)
+  const galleryInView = useInView(galleryRef, { once: true, amount: 0.3 })
 
   const handleImageError = (src: string) => {
     setImgError((prev) => ({
@@ -31,7 +33,7 @@ export default function ExteriorSection() {
     },
     {
       title: "Bazén s lehátkami",
-      description: "K dispozícii je prekrytý bazén vyhrievaný tepelným čerpadlom, vhodný pre celú rodinu alebo skupinu priateľov. Súčasťou vybavenia je aj solárna sprcha, lehátka a slnečník na pohodlný relax.",
+      description: "K dispozícii je prekrytý bazén vyhrievaný tepelným čerpadlom, vybavený aj UV lampou na účinnejšiu dezinfekciu vody. Súčasťou vybavenia je aj solárna sprcha, lehátka a slnečník na pohodlný relax.",
       image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753286830/11_ylzdmo.jpg",
     },
     {
@@ -44,19 +46,19 @@ export default function ExteriorSection() {
   const allExteriorImages = [
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753290653/2_mnncph.jpg", alt: "Kúpacia kaďa" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753290964/exterier3_mad4pu.jpg", alt: "Hupacia sieť" },
-    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988773/4_gfwj0q.png", alt: "Visiacie posedenie" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753373762/4_gfwj0q.jpg", alt: "Visiacie posedenie" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988770/5_afsnkl.png", alt: "Výrivka" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988768/1_z4pedn.png", alt: "Bazén" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753290702/exterier1_srbzfy.jpg", alt: "Posedenie" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988774/6_rb48ip.png", alt: "Gril" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988775/7_czmkgh.png", alt: "Basketbalový kôš" },
-    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988777/8_vsmxph.png", alt: "Šípky" },
+    { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753373808/8_vsmxph.jpg", alt: "Šípky" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748989053/10_zccajg.png", alt: "Zimné posedenie" },
     { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748988769/3_eqtldz.png", alt: "Kúpacia kaďa v zime" },
   ]
 
   return (
-    <AnimatedSection id="exterior" className="py-20 bg-white" animation="fadeIn">
+    <section id="exterior" className="py-20 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <AnimatedText as="h2" animation="slideUp" className="text-3xl md:text-4xl font-bold mb-4">
@@ -105,13 +107,15 @@ export default function ExteriorSection() {
           ))}
         </div>
 
-        <div className="mt-12">
+         <div className="mt-12" ref={galleryRef}>
           <AnimatedText as="h3" animation="slideUp" className="text-2xl font-semibold mb-6 text-center">
             Fotogaléria exteriéru
           </AnimatedText>
-          <AnimatedElement animation="scale" delay={0.2}>
-            <ImageGallery images={allExteriorImages} />
-          </AnimatedElement>
+          {galleryInView && (
+            <AnimatedElement animation="scale" delay={0.2}>
+              <ImageGallery images={allExteriorImages} />
+            </AnimatedElement>
+          )}
         </div>
 
         <AnimatedElement
@@ -470,6 +474,6 @@ export default function ExteriorSection() {
           </motion.div>
         </AnimatedElement>
       </div>
-    </AnimatedSection>
+    </section>
   )
 }

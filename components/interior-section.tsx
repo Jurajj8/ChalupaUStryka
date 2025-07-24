@@ -29,7 +29,7 @@ export default function InteriorSection() {
       description:
         "Spoločenská miestnosť je vybavená gaučom a televízorom so satelitným alebo internetovým príjmom prostredníctvom služby Skylink. Celá rodina či skupina priateľov sa môže zabaviť aj pri rôznych spoločenských hrách, alebo pri stolnom futbale.",
       images: [
-        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031333/1_bikx46.png", alt: "Spoločenská miestnosť 1" },
+        { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753373915/1_bikx46.jpg", alt: "Spoločenská miestnosť 1" },
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031348/2_nikqzx.png", alt: "Spoločenská miestnosť 2" },
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031356/3_bi16eo.png", alt: "Detský kútik" },
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031303/4_cwncpi.png", alt: "Kalčeto" },
@@ -52,7 +52,7 @@ export default function InteriorSection() {
       id: "kupelne",
       title: "Kúpeľne",
       description:
-        "K dispozícii sú dve moderne vybavené kúpeľne s toaletou a sprchovacím kútom. Jedna z nich je navyše vybavená infrasaunou pre dve osoby, ideálnou na relax po aktívnom dni. Ubytovanie zahŕňa aj všetko potrebné pre váš komfort – od posteľnej bielizne až po uteráky a saunové plachty.",
+        "K dispozícii sú dve moderne vybavené kúpeľne s toaletou a sprchovacím kútom. Jedna z nich je navyše vybavená infrasaunou pre dve osoby, ideálnou na relax po aktívnom dni. Ubytovanie zahŕňa aj všetko potrebné pre váš komfort – posteľné bielizne, 3x uteráky a saunové plachty. Osušky je potrebné si priniesť.",
       images: [
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031191/1_mttqex.png", alt: "Kúpeľňa 1" },
         { src: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1749031191/2_ltb6g9.png", alt: "Kúpeľňa 2" },

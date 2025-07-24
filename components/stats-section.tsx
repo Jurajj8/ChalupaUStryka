@@ -28,7 +28,7 @@ export default function StatsSection() {
       decimals: 1,
     },
     {
-      value: 2018,
+      value: 2021,
       label: "Rok založenia",
       icon: <Home className="h-8 w-8 text-primary" />,
     },
