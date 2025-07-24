@@ -62,12 +62,12 @@ export default function LocationSection() {
       image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748983935/vychylovka_sc9dmb.webp",
     },
     {
-      title: "Kysucká hvezdáreň v Kysuckom Novom Meste",
-      description: "Pre návštevníkov ponúka sprostredkovanie najnovších objavov a poznatkov prostredníctvom prednášok, výstav, astrotýždňa s možnosťou priamej účasti sa na pozorovaní vesmírnych úkazov a objektov.",
-      distance: "23 km",
-      duration: "27 min",
+      title: "Klubinská dolina",
+      description: "Klubínska dolina je malebná dolina v Oravskej Magure, situovaná neďaleko obce Klubina pri Dolnom Kubíne. Dolina je známa pokojnou prírodou, potokom Klubinka a výhľadmi na okolitú oravskú krajinu. Vďaka čistému vzduchu a minimálnemu ruchu je ideálnym miestom na relax a oddych v prírode.",
+      distance: "50 m",
+      duration: "1 min",
       seasonality: "Celoročne",
-      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1748983934/hvezdaren_uk89cq.webp",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753380430/hvezdaren_uk89cq.jpg",
     },
     {
       title: "Lanový Park Dino Adventure",
