@@ -159,12 +159,12 @@ export default function LocationSection() {
           >
             <div className="absolute inset-0 bg-black/5 z-10 pointer-events-none"></div>
             <Image
-              src={imgError["/ChalupaUStryka/images/klubina.jpg"] ? "/ChalupaUStryka/placeholder.svg?height=720&width=1280" : "/ChalupaUStryka/images/klubina.jpg"}
+              src={imgError["https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753392332/klubina_tkvhrk.jpg"] ? "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753392204/placeholder_afrpgi.svg" : "/ChalupaUStryka/images/klubina.jpg"}
               alt="Mapa lokality"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
-              onError={() => handleImageError("/ChalupaUStryka/images/klubina.jpg")}
+              onError={() => handleImageError("https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753392332/klubina_tkvhrk.jpg")}
             />
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -339,7 +339,7 @@ export default function LocationSection() {
                 <Card className="overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow h-full">
                   <div className="relative h-48">
                     <Image
-                      src={imgError[attraction.image] ? "/placeholder.svg?height=400&width=600" : attraction.image}
+                      src={imgError[attraction.image] ? "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753392204/placeholder_afrpgi.svg" : attraction.image}
                       alt={attraction.title}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"

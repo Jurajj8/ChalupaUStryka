@@ -83,7 +83,7 @@ export default function ExteriorSection() {
                   transition={{ type: "spring", stiffness: 300, damping: 10 }}
                 >
                   <Image
-                    src={imgError[feature.image] ? "/placeholder.svg?height=600&width=800" : feature.image}
+                    src={imgError[feature.image] ? "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753392204/placeholder_afrpgi.svg" : feature.image}
                     alt={feature.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
