@@ -67,7 +67,7 @@ export default function LocationSection() {
       distance: "50 m",
       duration: "1 min",
       seasonality: "Celoročne",
-      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753380430/hvezdaren_uk89cq.jpg",
+      image: "https://res.cloudinary.com/djreoxyzu/image/upload/f_auto,q_auto/v1753381764/hvezdaren_uk89cq.jpg",
     },
     {
       title: "Lanový Park Dino Adventure",
