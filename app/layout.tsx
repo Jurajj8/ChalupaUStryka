@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="sk" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="https://res.cloudinary.com/djreoxyzu/image/upload/v1753393397/favicon_nzyozw.ico" sizes="any" />
+        <link rel="icon" href="https://res.cloudinary.com/djreoxyzu/image/upload/v1753393595/favicon_k53ey2.png" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
