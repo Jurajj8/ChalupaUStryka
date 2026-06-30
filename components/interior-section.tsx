@@ -94,33 +94,38 @@ export default function InteriorSection() {
           >
             <TabsList
               className="
-                flex flex-wrap justify-center gap-2 mb-8 w-full p-0 md:grid md:grid-cols-4 md:gap-x-0 md:overflow-visible h-auto
+                mx-auto mb-8 flex h-auto w-full max-w-3xl items-stretch gap-1 overflow-x-auto rounded-full
+                border border-gray-200 bg-gray-100/80 p-1.5
+                [scrollbar-width:none] [&::-webkit-scrollbar]:hidden
+                md:overflow-visible
               "
             >
-              {interiorSpaces.map((space, index) => (
-                <motion.div
-                  key={space.id}
-                  whileHover={{ y: -3 }}
-                  whileTap={{ y: 0 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                  className="flex-1" 
-                >
+              {interiorSpaces.map((space) => {
+                const isActive = activeTab === space.id
+                return (
                   <TabsTrigger
                     key={space.id}
                     value={space.id}
-                    //onClick={() => setActiveTab(space.id)}
                     className="
-                      min-w-[120px] w-full text-sm md:text-base text-center py-2.5 rounded-lg border border-transparent
-                      data-[state=active]:bg-white data-[state=active]:text-primary data-[state=active]:border-primary 
-                      transition-colors duration-150
-                      whitespace-nowrap
-                      px-3
+                      relative z-10 flex-none whitespace-nowrap rounded-full px-4 py-2.5
+                      text-sm font-medium text-gray-600 transition-colors duration-200
+                      hover:text-gray-900
+                      bg-transparent shadow-none
+                      data-[state=active]:bg-transparent data-[state=active]:text-white data-[state=active]:shadow-none
+                      md:flex-1 md:text-base
                     "
                   >
+                    {isActive && (
+                      <motion.span
+                        layoutId="activeRoomTab"
+                        className="absolute inset-0 -z-10 rounded-full bg-primary shadow-sm"
+                        transition={{ type: "spring", stiffness: 320, damping: 30 }}
+                      />
+                    )}
                     {space.title}
                   </TabsTrigger>
-                </motion.div>
-              ))}
+                )
+              })}
             </TabsList>
           </motion.div>
 
