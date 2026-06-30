@@ -8,14 +8,61 @@ import Preloader from "@/components/preloader"
 import CookieConsent from "@/components/cookie-consent"
 // Pridajte import pre Toaster
 import { Toaster } from "@/components/ui/toaster"
+import { SITE_URL, siteConfig, lodgingJsonLd } from "@/lib/site"
 
 const inter = Inter({ subsets: ["latin", "latin-ext"] })
 
 export const metadata: Metadata = {
-  title: "Chalupa u Strýka - Komfortné ubytovanie v Klubine",
-  description:
-    "Chalupa u Strýka Vás celoročne ubytuje v komfortne zariadenej chate s maximálnou kapacitou 9 osôb v malebnej obci Klubina na severe Slovenska.",
-    generator: 'v0.dev'
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: [...siteConfig.keywords],
+  applicationName: siteConfig.name,
+  authors: [{ name: siteConfig.name, url: SITE_URL }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: siteConfig.locale,
+    url: SITE_URL,
+    siteName: siteConfig.name,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  // Overenie v Google Search Console:
+  // Ak použijete metódu "HTML značka", vložte sem získaný kód, napr.:
+  // verification: { google: "VÁŠ_OVEROVACÍ_KÓD" },
 }
 
 export default function RootLayout({
@@ -27,6 +74,10 @@ export default function RootLayout({
     <html lang="sk" suppressHydrationWarning>
       <head>
         <link rel="icon" href="https://res.cloudinary.com/djreoxyzu/image/upload/v1753393595/favicon_k53ey2.png" sizes="any" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(lodgingJsonLd) }}
+        />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
