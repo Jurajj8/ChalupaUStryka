@@ -37,12 +37,13 @@ export const siteConfig = {
     region: "Žilinský kraj",
     country: "SK",
   },
-  // Približné súradnice obce Klubina – odporúčam upresniť presnou polohou
-  // chalupy (pin z Google Máp → "Čo je tu?").
+  // Presná poloha chalupy (zhodná s pinom Google Business Profilu).
   geo: {
-    latitude: 49.4456,
-    longitude: 18.8689,
+    latitude: 49.3538643,
+    longitude: 18.8976947,
   },
+  // Google Business Profile (Mapy) – prepája web s firmou v Mapách.
+  googleMapsUrl: "https://www.google.com/maps?cid=11979490056351622788",
 } as const
 
 // Štruktúrované dáta (JSON-LD) typu LodgingBusiness pre Google rich results.
@@ -53,6 +54,8 @@ export const lodgingJsonLd = {
   description: siteConfig.description,
   url: siteConfig.url,
   image: [siteConfig.ogImage],
+  hasMap: siteConfig.googleMapsUrl,
+  sameAs: [siteConfig.googleMapsUrl],
   telephone: siteConfig.contact.phone,
   email: siteConfig.contact.email,
   priceRange: "€€",
